@@ -1,6 +1,6 @@
 # About Me
 
-##🎓 教育经历
+## 🎓 教育经历
 
 2020.09 - 2023.06: University of Chinese Academy of Sciences - Chengdu Institute of Computer Application
 
@@ -52,3 +52,11 @@ GPA = 3.23 （专业前 10% ） ｜ 连续 3 年获得专业奖学金（2 次二
 ### 社团组织经历
 
 - 担任智能机器人实验室助理 （大二学年 2017-09 至 2018-06 ）
+
+
+
+---
+
+## 更新时间线
+
+- 2020 年 11 月 02 日：创建了此页面，添加了本科的基本情况。
