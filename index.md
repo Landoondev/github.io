@@ -12,7 +12,9 @@
 
 ## Blog
 
-- [2020.11.02 #论文阅读：AlexNet](posts/20201102-Paper-AlexNet)
+- [2020.10.30 #工具#：macOS 安装 Mininet 进行网络实验](20201030-macOS-install-Mininet)
+
+- [2020.10.24 #论文阅读#：AlexNet](posts/20201024-Paper-AlexNet)
 
 - [2020.11.02: Hello Word](posts/20201102-hello-word)
 
