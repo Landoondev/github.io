@@ -84,6 +84,21 @@ $$R(a_{k}|X) = \min_{i = 1, 2, ..., M}  R(\alpha_{i}|X)$$
 
 
 
+具体做法是，在文章头插入如下代码：
+
+```
+<head>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+```
+
+经过测试发现，行内公式有些显示不正常，如类条件概率密度。
+
+行间公式全部显示正常。
+
+
+
 ## 测试代码
 
 ```c++
