@@ -27,7 +27,7 @@ git push origin main
 
 我的个人公众号「蓝本本」。
 
- <img src="./20201102/2.png" width = "100" height = "100" altalign=center />
+![](./20201102/2.png)
 
 
 
