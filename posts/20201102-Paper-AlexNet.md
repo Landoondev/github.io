@@ -92,7 +92,7 @@ ReLU（ Rectified Linear Units）：修正线性单元。使用 ReLU 激活函�
 
 双 GPU 网络的训练时间比单 GPU 网络略少。
 
-###局部响应归一化（LRN）
+### 局部响应归一化（LRN）
 
 网络使用了一种叫做 Local Response Normalization 的策略来提升模型的泛化能力。
 
@@ -176,7 +176,11 @@ Dropout 在训练过程中只需要花费大约 2 倍的成本，会使收敛所
 
 ![](./20201025/6.png)
 
-$i$ 是迭代次数，$v$ 是动量变量，$\epsilon$ 是学习率，$\langle \frac{\partial L}{\partial w}|_{w_i}\rangle_{D_i}$ 是目标对于 $w$ 的导数在第 $i$ 个批次 $D_i$ 上的平均值，评价为 $w_i$ （is the average over the $i$ th batch $D_i$ of the derivative of the objective with respect to $w$, evaluated at $w_i$. ）
+$i$ 是迭代次数，$v$ 是动量变量，$\epsilon$ 是学习率，
+
+$$\langle \frac{\partial L}{\partial w}|_{w_i}\rangle_{D_i}$$ 
+
+是目标对于 $w$ 的导数在第 $i$ 个批次 $D_i$ 上的平均值，评价为 $w_i$ （is the average over the $i$ th batch $D_i$ of the derivative of the objective with respect to $w$, evaluated at $w_i$. ）
 
 ### 权重初始化
 
