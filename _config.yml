@@ -1,6 +1,18 @@
 theme: jekyll-theme-cayman
 title:            "Landon"
 signoff:          "Landon"
-description:      "#1 NEVER SETTLE."
-description:      "#2 University of Chinese Academy of Sciences - Chengdu Institute of Computer Application"
+description:      "# University of Chinese Academy of Sciences - Chengdu Institute of Computer Application"
 name:             Landon
+links:
+  - name:         Home
+    url:          /
+    external:     false
+  - name:         Contents
+    url:          /contents
+    external:     false
+  - name:         About
+    url:          /about
+    external:     false
+  - name:         GitHub
+    url:          https://github.com/donngdev
+    external:     true
