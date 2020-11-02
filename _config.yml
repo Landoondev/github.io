@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+markdown: kramdown
 title:            "Landon"
 signoff:          "Landon"
 description:      "# NEVER SETTLE #"
