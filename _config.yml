@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+title:            "Landor"
+url:              https://donngdev.github.io # Site url, without a slash at the end.
+signoff:          "Landor"
+description:      "#1 NEVER SETTLE."
+name:             Landor
