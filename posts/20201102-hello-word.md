@@ -1,13 +1,6 @@
 <head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 
 # Hello World
@@ -49,7 +42,7 @@ git push origin main
 
 ## 测试插入公式
 
-已知共有 $M$ 样本，各类别 $$w_{i}, i = 1, 2, ..., M$$ 的先验概率 $$P(w_{i})$$ 以及类条件概率密度函数 $$P(X|w_{i})$$ ,对于给定的待分类样本，贝叶斯公式可以计算出该样本分属各类别的概率。即将后验概率作为识别对象归属的依据。
+已知共有 $M$ 样本，各类别 $w_{i}, i = 1, 2, ..., M$ 的先验概率 $$P(w_{i})$$ 以及类条件概率密度函数 $$P(X|w_{i})$$ ,对于给定的待分类样本，贝叶斯公式可以计算出该样本分属各类别的概率。即将后验概率作为识别对象归属的依据。
 
 $$P(w_{i}|X)=\frac{P(X|w_{i})P(w_{i})}{\sum^{M}_{j=1}P(X|w_{i})P(w_{i})}$$
 
