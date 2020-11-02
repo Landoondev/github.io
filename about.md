@@ -1,5 +1,9 @@
 ## About Me
 
-2016-2020: South-Central University for Nationalities（SCUEC）
+2020.09 - 2023.06: University of Chinese Academy of Sciences - Chengdu Institute of Computer Application
 
-![](./images/dzlogo.png)
+
+
+2016.09 - 2020.06 : South-Central University for Nationalities（SCUEC）
+
+![](./dzlogo.png)
