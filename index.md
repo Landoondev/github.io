@@ -12,5 +12,7 @@
 
 ## Blog
 
+- [2020.11.02 #论文阅读：AlexNet](posts/20201102-Paper-AlexNet)
+
 - [2020.11.02: Hello Word](posts/20201102-hello-word)
 
