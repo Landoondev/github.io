@@ -17,6 +17,8 @@
 
 ## Blog
 
+- [2020.11.04: #论文阅读# : Array Programming with NumPy](posts/20201104-Paper-NumPy)
+
 - [SVM 笔记 1: $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导](posts/20201103-SVM-notes)
 
 - [2020.10.30 #工具#：macOS 安装 Mininet 进行网络实验](posts/20201030-macOS-install-Mininet)
