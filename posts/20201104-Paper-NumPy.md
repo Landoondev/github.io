@@ -1,4 +1,4 @@
-# #论文阅读#
+# #论文阅读-NumPy#
 
 论文名称：Array Programming with NumPy
 
@@ -199,15 +199,209 @@ NumPy 库由以下几个部分组成：
 - 单元测试和 Python 包构建的基础库
 - 用于在 Python 中包装 Fortran 代码的程序 `f2py`
 
-`ndarray` 和通用函数一般被认为是 NumPy 的核心。
+**核心（Core）**：`ndarray` 和通用函数一般被认为是 NumPy 的核心。
 
 `ndarray` 是 NumPy 的核心数据结构。该数据结构在一个连续的块状内存中存储有规律的同质数据类型，允许有效地表示 n 维数据。
 
-通用函数 `ufuncs` 是使用 C 语言编写的函数，它实现了对 NumPy 数组的高效循环。`ufuncs` 的一个重要特点是内置了广播的实现。例如，函数 `arctan2(x, y)` 是一个接受两个值并计算 $$tan^{-1}(y/x)$$ 的 `ufunc`。
+**通用函数（universal functions）**： `ufuncs` 是使用 C 语言编写的函数，它实现了对 NumPy 数组的高效循环。`ufuncs` 的一个重要特点是内置了广播的实现。例如，函数 `arctan2(x, y)` 是一个接受两个值并计算 $$tan^{-1}(y/x)$$ 的 `ufunc`。
 
-todo：计算库 P14.
+**计算库（Computing libraries）**：
+
+- 数组操作和科学计算的函数库。如：创建、重塑、连接和填充数组；搜索、排序和计算数组中的数据；计算基本的统计数据，如平均值、中位数、方差和标准差；文件 I/O 等。
+
+- 计算快速傅立叶变换（FFT）及其逆。
+
+- 求解线性代数问题，如：计算行列式、矩阵的逆、特征值、特征向量等。
+
+- 可以生成服从特点概率分布（高斯分布、β、gamma 等）的随机数。
+
+**基础设施库（Infrastructure libraries）**：
+
+- 编写测试和构建 Python 包的工具（如 `assert_allclose(actual, desired)` 等函数）。
+
+- distutils：配置、安装和打包依赖 NumPy 的库。例如，当发布到 PyPI 网站时，会使用到。
+
+**F2PY**：`F2py` 是一个用于构建 NumPy-aware Python 封装 Fortran 函数的工具。
+
+## 治理
+
+NumPy 于 2015 年 10 月 5 日通过了一份正式的治理文件，用于监督和审查 NumPy 日常的发展。
+NumPy 的官方行为准则于 2018 年 9 月 1 日获得批准。
+
+这份行为准则主要体现：开放、富有同情心、欢迎、友好和耐心、具有协作精神、具有探究精神等。
+
+## 资金
+2017 年，NumPy 从 Gordon & Betty Moore 和 Alfred P. Sloan 基金会获得了130 万美元的资助。
+
+2019 年，Chan Zuckerberg 资助了 19.5 万美元。
+
+自 2019 年 5 月起，每年都会从 Tidelift 获得少量资金，用于文档和网站改进等工作。
+
+## 开发者
+
+NumPy 目前由 23 名拥有 NumPy 代码库提交权的贡献者维护。
 
 
+
+在 NumPy 的历史上，已经有 823 个贡献者的 PR。但是它的发展主要还是依赖于少数活跃的维护者，这些人贡献了大部分的代码。
+
+NumPy 大约每半年一次更新，历年的 PR 情况如 Fig.4 所示。
+
+![](./20201104/6.png)
+
+## 社区
+
+有大量的 Python 包以 NumPy 作为基础，因此需要 NumPy 具备很高的稳定性。
+
+NumPy 的新功能开发流程，会吸取社区的贡献和反馈。
+
+每周一次的社区电话会议。
+
+## 加强 NumPy 的建议
+
+NumPy 代码库是非常复杂的，还有大量依赖于它的项目。因此，在进行修改时，需要吸取社区的反馈和意见。
+
+NumPy 增强提案（NEP）是在 Python 增强提案（PEP）的基础上建模的，用于“提出重大新功能，收集社区对某个问题的意见以及记录已纳入 Python 的设计决策”。
+
+## 核心角色
+
+NumPy在构建和标准化科学Python社区的大部分基础设施方面发挥了核心作用。
+
+Python 社区的大部分基础设施对于 NumPy 的构建和标准化起到了核心作用。
+
+NumPy 的 docstring 标准现在被广泛采用。
+
+科学 Python 生态的所有项目都采用一个共同的 "time window-based" 策略支持 Python 和 NumPy 版本。
+
+## Wheels build system 
+
+Python *wheel* 是一种标准的文件格式，用于分配 Python 库。
+
+*wheel* 还可以包括编译后的 C 扩展和其他二进制数据。包括 NumPy 在内的许多库都需要 C 编译器和其他构建工具来从源代码进行安装，这使得许多用户很难自行安装软件。
+
+在 Python 打包系统中引入了 wheel 后，使得用户安装预编译的库变得更加容易。
+
+这个系统使得用户可以很容易地在这些平台上安装预编译版本的 NumPy。
+
+Wheel（造轮子？）还在不断发展中。
+
+## 近期的技术改进
+
+测试基础架构的改变，以支持大规模计算中使用的硬件平台。
+
+## 数组函数协议
+
+目前 NumPy 已经无法满足某些方面的需求，因此，出现了众多的专业项目。
+
+如：PyTorch 和 Tensorflow 提供了具有 NumPy 启发语义的张量 API。
+
+Dask 是一个在 Python 中用于并行计算的库。Dask 采用了 NumPy API，因此为现有的 NumPy 用户提供了一个熟悉的界面，同时增加了强大的并行化和分配任务的能力。
+
+使用 NumPy 类 API 的用户要针对一个项目编写特定的代码，这对于依赖某个特定框架的用户来说是一个负担，因为他们需要的工具可能不适合他们。
+
+这也给那些需要从 NumPy 过渡到更专业的数组的用户带来了挑战。越来越多的具有 NumPy-like API 的专业项目（框架）有可能再次使科学 Python 社区出现分裂。
+
+为了解决这些问题，NumPy 的目标是为各种 NumPy-like 的 API 之间的互操作性提供基本的 API。
+
+较早的 `__array_ufunc__` 协议，它使大多数数学函数的互操作性得以实现。
+
+2019 年，` __array_function__` 协议被纳入 NumPy 1.17 中。
+
+下面是通过 NumPy 对 CuPy GPU 数组进行处理，所有的操作都被派发回 CuPy。
+
+```python
+import numpy as np 
+import cupy as cp
+x_gpu = cp.array([1, 2, 3])
+y = np.sum(x_gpu) # Returns a GPU array
+```
+
+同样，使用 NumPy 组成的用户定义函数现在也可以应用于多节点分布式 Dask 数组。
+
+```python
+import numpy as np
+import dask.array as da
+
+def f(x):
+    """ Function using NumPy API calls """
+    y = np.tensordot(x, x.T) return np.mean(np.log(y + 1))
+
+x_local = np.random.random([10000, 10000]) # random local array
+x_distr = da.random.random([10000, 10000]) # random distributed 
+
+array f(x_local) # returns a NumPy array
+f(x_distr) # works, returns a Dask array
+```
+
+## 随机数生成
+
+NumPy 的 `random` 模块提供了各种分布的伪随机数。在 NumPy 的遗留版本中，模拟随机值是由一个 `RandomState` 对象产生的。
+
+`RandomState` 对象做出了兼容性保证，固定的种子和函数调用序列就会产生相同的数据集合。
+
+NumPy 1.17 引入了一个新的生成随机数的 API，它使用了一个更灵活的结构，可以由库或用户扩展。新的 API 使用组件构建，这些组件将生成随机变量所需的步骤分开。伪随机位由位发生器（a bit generator）生成。然后，这些比特由一个生成器转化为来自复杂分布的变量。最后，种子由一个对象处理，该对象产生高质量的初始值序列。
+
+比特生成器（Bit generator）是简单的类，管理底层伪随机数的状态。
+
+NumPy 有四种比特生成器：
+
+- 默认的生成器：Permuted Congruential Generator
+- Philox generator
+- Chris Doty-Humphrey 的 Small Fast Chaotic generator
+- 32-bit Mersenne Twister
+
+比特生成器在 Python 和 C 中提供了公开的函数，用于生成随机整数和浮点数。
+
+生成器（Generator）消耗其中一个比特位生成器，生成复杂分布的数。
+
+还有很多分布：正态、指数，以及用于有界随机整数生成的 Lemire 方法。Generator 与传统的 RandomState 较为相似，其API也基本相同。
+
+最后，SeedSequence 用于初始化位发生器。种子序列可以在没有参数的情况下初始化，在这种情况下，它从一个依赖于系统的提供者那里读取熵，或者用用户提供的种子来初始化。
+
+以上三个组件组合起来，构建了一个完整的随机数发生器。
+
+```python
+from numpy.random import (
+    Generator,
+    PCG64, # 默认生成器
+    SeedSequence,
+)
+seq = SeedSequence (1030424547444117993331016959)
+pcg = PCG64(seq)
+gen = Generator(pcg)
+```
+
+这种方法保留了对种子序列的访问权，然后可以用来产生更多的生成器。
+
+```python
+children = seq.spawn(2)
+gen_0 = Generator(PCG64(children[0])) 
+gen_1 = Generator(PCG64(children[1]))
+```
+
+虽然这种方法保留了完整的灵活性，但当不需要重现性的时候，可以使用`np.random.default_rng` 方法来实例化一个 Generator。
+
+新 API 的最终目标是提高可扩展性。
+
+RandomState 掩盖了所有的底层状态和功能。
+
+## 在多种架构上测试
+
+Summit 和 Sierra 这两台超级计算机都采用了IBM POWER9 架构。
+
+截至 2017 年，ARM 处理器的产量已经超过1000 亿个，成为世界上应用最广泛的指令集架构。
+
+NumPy 这个科学计算软件库在 POWER 和 ARM 进行了测试。
+
+- ppc64le（Travis CI上 的 POWER8）
+- ARMv8（Shippable 服务）
+- s390x 架构（Travis CI上的 IBM Z CPU）
+
+PEP 599 提出了一个新的 Python 二进制 wheel 发行支持计划。
+
+manylinux2014 增加了对 ARMv8、pc64le 以及 s390x 的支持。
+
+NumPy 已经做好了准备，未来在这些架构上提供的二进制文件，并成为一个基础库。
 
 
 
