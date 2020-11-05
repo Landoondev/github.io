@@ -1,8 +1,3 @@
-<head>
-  <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
-  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-</head>
-
 # Home
 
 - [2020.11.04: #论文阅读# : Array Programming with NumPy](posts/20201104-Paper-NumPy)
