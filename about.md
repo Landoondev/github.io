@@ -2,13 +2,9 @@
 
 ## 🎓 教育经历
 
-2020.09 - 2023.06: University of Chinese Academy of Sciences - Chengdu Institute of Computer Application
-
-![](./UCAS.png)
-
-2016.09 - 2020.06 : South-Central University for Nationalities（SCUEC）
-
-![](./dzlogo.png)
+- 预计 2021.09 - 2023.06：（硕士培养单位）中国科学院成都计算机应用研究所（Chengdu Institute of Computer Application, CAS）
+- 2020.09 - 至今：（硕士）中国科学院大学（University of Chinese Academy of Sciences ）
+- 2016.09 - 2020.06：（本科）中南民族大学（South-Central University for Nationalities）
 
 ## ⛳️研究方向（2020.09 - 2023.06）
 

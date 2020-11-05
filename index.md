@@ -3,19 +3,7 @@
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 
-# HOME
-
-学习、进修和放纵好奇心。
-
-## About Me
-
-- 预计 2021.09 - 2023.06：（硕士培养单位）中国科学院成都计算机应用研究所（Chengdu Institute of Computer Application, CAS）
-- 2020.09 - 至今：（硕士）中国科学院大学（University of Chinese Academy of Sciences ）
-- 2016.09 - 2020.06：（本科）中南民族大学（South-Central University for Nationalities）
-
-更多  [Click ➜](/about)
-
-## Blog
+# Home
 
 - [2020.11.04: #论文阅读# : Array Programming with NumPy](posts/20201104-Paper-NumPy)
 
