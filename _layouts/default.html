@@ -17,13 +17,11 @@
 
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#1E90FF">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
-
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
@@ -32,8 +30,8 @@
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.home }}" class="btn">Home</a>
-        <a href="{{ site.github.about }}" class="btn">About Me</a>
-        <a href="https://github.com/landodo" class="btn">My GitHub</a>
+        <a href="{{ site.github.about }}" class="btn">About</a>
+        <a href="https://github.com/landodo" class="btn">GitHub</a>
       {% endif %}
     </header>
 
