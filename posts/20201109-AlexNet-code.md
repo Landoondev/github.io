@@ -4,6 +4,32 @@
 
 这些经典的神经网络结构，要熟悉到能白板编程的技能。
 
+最近看到有关机器学习的一个推特，觉得很有启发。
+
+> What a lot of machine learning courses & books teach:
+>
+> - Load clean data
+> - Train an MNIST-* classifier with 99% accuracy
+>
+> What they should actually be teaching:
+>
+> - Process, clean, load your own data
+> - Fail many experiments and research/find/understand ways to improve your ML model
+>
+> ---
+>
+> 很多机器学习课程与书籍所教授的内容：
+>
+> - 加载干净的数据
+> - 训练一个MNIST-* 分类器，准确率达 99%。
+>
+> 他们其实应该教什么。
+>
+> - 处理、清理、加载自己的数据
+> - 多次实验失败，研究/发现/了解改进你的 ML 模型的方法。
+
+![](./20201109/tips.png)
+
 ## 环境准备
 
 第一步：启动虚拟环境
@@ -32,6 +58,9 @@
 
 - MNIST（0-9 手写数字）
 - COCO（用于图像标注和目标检测）
+
+
+
 - LSUN（包含数百万个场景和对象的彩色图像）
 - **CIFAR-10**
 
@@ -298,4 +327,13 @@ class AlexNet(nn.Module):
         
         return x
 ```
+
+## 思考
+
+我有几个疑问？
+
+- AlexNet 论文里面的数据集使用的是 $$256\times256\times3$$，采用数据增强后真正输入到网络的图像 size 为 $$224\times224\times3$$，但是编程实现的时候，输入的大多是 $$227\times227\times3$$ 这个 227 是怎么算出来的？
+- 我感觉有人用 224，有人用 227，有什么区别吗？
+
+- 上文我记录的第一个程序 `pytorch-cifar10`，每张图像的输入是 $$32\times32\times3$$。这种情况下一种处理方式是 `resize` 成 224；另一种是更改网络的 kernel_size、padding、stride，修改过之后的网络还能叫做是 AlexNet 吗？
 
