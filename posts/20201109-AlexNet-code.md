@@ -37,7 +37,7 @@
 
 ![](./20201109/3.png)
 
-CIFAR-10 dataset (Canadian Institute For Advanced Research) ：https://www.cs.toronto.edu/~kriz/cifar.html
+CIFAR-10 dataset (Canadian Institute For Advanced Research) ：[https://www.cs.toronto.edu/~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 CIFAR-10 和 CIFAR-100 是一个包含 8000 万张微小图像的数据集，由 Alex Krizhevsky、Vinod Nair 和 Geoffrey Hinton 收集。
 
@@ -80,7 +80,9 @@ GitHub: <https://github.com/zalandoresearch/fashion-mnist>
 
 ## AlexNet
 
-GitHub：pytorch-cifar10
+### GitHub：pytorch-cifar10
+
+输入图片的大小为 $$32\times32\times3$$
 
 ```python
 class AlexNet(nn.Module):
@@ -119,9 +121,15 @@ class AlexNet(nn.Module):
 
 ```
 
-Papers with Code
+我按照吴恩达老师的视频教程，绘制了一个图，如下。
 
-```
+![](./20201109/5.jpg)
+
+### Papers with Code
+
+这里的图片输入应该是 $$227\times227\times3$$，所有网络的内部 `kernel_size` 和 `stride` 会有不同。
+
+```python
 class AlexNet(nn.Module):
     """
     Neural network model consisting of layers propsed by AlexNet paper.
@@ -189,7 +197,11 @@ class AlexNet(nn.Module):
 
 ```
 
-Zhihu
+### Zhihu 知乎
+
+[https://zhuanlan.zhihu.com/p/29786939](https://zhuanlan.zhihu.com/p/29786939)
+
+给出了局部响应归一化的实现。
 
 ```python
 import torch.nn as nn
@@ -224,6 +236,8 @@ class LRN(nn.Module):
         x = x.div(div)
         return x
 ```
+
+这个专门分了 `layer1`， `layer2`， `layer3` ，更加的好理解了。
 
 ```python
 from torch import nn
