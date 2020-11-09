@@ -2,6 +2,8 @@
 
 
 
+👨‍💻 [2020.11.09 #code#: CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
+
 📝 [2020.11.07 #作业#: HTTP ➜ HTTPS: C 语言从 0 开始构建服务器（1）](/posts/20201107-HTTP-Server-1)
 
 📝 [2020.11.06 #作业#: Prim 算法&Kruskal 算法求最小生成树](posts/20201106-prim-kruskal)
