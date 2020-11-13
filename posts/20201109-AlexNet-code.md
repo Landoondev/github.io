@@ -103,7 +103,7 @@ GitHub: <https://github.com/zalandoresearch/fashion-mnist>
 
 找到了一个可供参考的小项目，数据集是 CIFAR-10。
 
-![](./20201109/2.png)
+![](./20201109/6.png)
 
 
 
@@ -156,7 +156,7 @@ class AlexNet(nn.Module):
 
 ### Papers with Code
 
-这里的图片输入应该是 $$227\times227\times3$$，所有网络的内部 `kernel_size` 和 `stride` 会有不同。
+这里的图片输入应该是 $$227\times227\times3$$，所以网络的内部 `kernel_size` 和 `stride` 会有不同。
 
 ```python
 class AlexNet(nn.Module):
