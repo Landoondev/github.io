@@ -1,6 +1,6 @@
 <h1 align='center'> Home </h1>
 
-👨‍💻 [2020.11.13 #code# : HTTP Server 轻笔记（2）](20201113-http)
+👨‍💻 [2020.11.13 #code# : HTTP Server 轻笔记（2）](/posts/20201113-http)
 
 👨‍💻 [2020.11.09 #code#: CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
 
