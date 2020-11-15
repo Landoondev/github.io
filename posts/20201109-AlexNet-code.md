@@ -76,7 +76,7 @@ CIFAR-10 和 CIFAR-100 是一个包含 8000 万张微小图像的数据集，由
 
 有 50000 张训练图像（train set）和 10000 张测试图像（test set）。
 
-数据集分为 5 个训练 Batch 和 1 个测试 Batch。每个Train Batch 有 1000 张图像，Test Batch 正好包含 1000 张从每个类中随机选取的图像。 Train Batch 按随机顺序包含剩余的图像，但一些 Train Batch 可能包含来自一个类的图像比另一个类更多。在它们之间，Train batch 正好包含来自每个类的 5000 张图像。
+数据集分为 5 个训练 Batch 和 1 个测试 Batch。每个Train Batch 有 10000 张图像，Test Batch 正好包含 1000 张从每个类中随机选取的图像。 Train Batch 按随机顺序包含剩余的图像，但一些 Train Batch 可能包含来自一个类的图像比另一个类更多。在它们之间，Train batch 正好包含来自每个类的 5000 张图像。
 
 ![](./20201109/4.png)
 

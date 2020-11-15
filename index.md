@@ -1,8 +1,14 @@
 <h1 align='center'> Home </h1>
 
-👨‍💻 [2020.11.13 #code# : HTTP Server 轻笔记（2）](/posts/20201113-http)
+---
 
-👨‍💻 [2020.11.09 #code#: CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
+
+
+👨‍💻 [2020.11.15 #AlexNet#: AlexNet 复现-完结 82% Accuracy](./posts/20201115-AlexNet-81-precent-accuracy)
+
+👨‍💻 [2020.11.13 #code# : HTTP Server 轻笔记（2）](./posts/20201113-http)
+
+👨‍💻 [2020.11.09 #AlexNet, code#: CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
 
 📝 [2020.11.07 #作业#: HTTP ➜ HTTPS: C 语言从 0 开始构建服务器（1）](/posts/20201107-HTTP-Server-1)
 
@@ -14,6 +20,7 @@
 
 🔧 [2020.10.30 #工具#：macOS 安装 Mininet 进行网络实验](posts/20201030-macOS-install-Mininet)
 
-📚 [2020.10.24 #论文阅读#：AlexNet](posts/20201024-Paper-AlexNet)
+📚 [2020.10.24 #AlexNet, 论文阅读#：AlexNet](posts/20201024-Paper-AlexNet)
 
 💡 [2020.11.02 Hello Word](posts/20201102-hello-word)
+
