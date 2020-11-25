@@ -4,11 +4,13 @@
 
 🧭 [这些使我受到启发](./posts/2020-11-23-deeply-inspired)
 
+🔍 [常用学习资源索引](./posts/2020-11-25-helpful-resource)
+
 ---
 
 ## 论文阅读
 
-📚[2020.11.24 #深度学习综述# Deep Learning Review](./posts/DeepLearning-Review)
+📚 [2020.11.24 #深度学习综述# Deep Learning Review](./posts/DeepLearning-Review)
 
 📚 [2020.11.23 #VGG# Very Deep Convolutional Networks for Large-Scale Image Recognition](./posts/2020-11-23-Paper-VGG)
 

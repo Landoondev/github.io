@@ -30,7 +30,7 @@
 
 > The weight vector is then adjusted in the opposite direction to the gradient vector.
 
-负梯度向量表示最陡峭的下降方向，超这个方向能修正，输出误差平均较低。
+负梯度向量表示最陡峭的下降方向，朝这个方向修正，输出误差平均较低。
 
 > The negative gradient vector indicates the direction of steepest descent in this landscape, taking it closer to a minimum, where the output error is low on average.
 
@@ -90,7 +90,7 @@
 - 自 2000 年以来，ConvNets 被成功地应用于图像中物体和区域的检测、分割和识别。
 - 图像可以进行像素级别的标记。
 - 类似 Mobileye 和 NVIDIA 等公司在他们即将推出的汽车视觉系统中使用基于 ConvNet 的方法。
-- 尽管 ConvNets 取得了不少的成绩，但是在当时还是被摒弃。直到 2012 年的 ImageNet 挑战赛，ConvNets 取得了压倒性的胜利。
+- 尽管 ConvNets 取得了不少的成绩，但是在当时还是不被看好。直到 2012 年的 ImageNet 挑战赛，ConvNets 取得了压倒性的胜利。
 - 它成功源自：GPU 的高效使用、ReLU 激活函数、Dropout 正则化方法以及数据增强技术。这带来了计算机视觉的革命。
 - ConvNets 现在几乎是所有识别和检测任务的主流方法。下图将 ConvNets 和 RNN 结合的应用。
 
