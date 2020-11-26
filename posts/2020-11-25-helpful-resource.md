@@ -16,3 +16,13 @@
 
 [LeeDeepRL-Notes](https://datawhalechina.github.io/leedeeprl-notes/#/)：https://datawhalechina.github.io/leedeeprl-notes/#/
 
+## 3. 王垠的几篇博客
+
+- [再谈“P vs NP”问题](http://www.yinwang.org/blog-cn/2019/07/21/pnp2)
+
+- [机器与人类视觉能力的差距（1）](http://www.yinwang.org/blog-cn/2019/09/14/machine-vs-human)
+- [机器与人类视觉能力的差距（2）](http://www.yinwang.org/blog-cn/2019/09/15/machine-vs-human-2)
+- [机器与人类视觉能力的差距（3）](http://www.yinwang.org/blog-cn/2019/09/16/machine-vs-human-3)
+
+- [人工智能的局限性](http://www.yinwang.org/blog-cn/2017/04/23/ai)
+- [AlphaGo与人工智能](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
