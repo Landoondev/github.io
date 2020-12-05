@@ -16,7 +16,7 @@
 
 [LeeDeepRL-Notes](https://datawhalechina.github.io/leedeeprl-notes/#/)：https://datawhalechina.github.io/leedeeprl-notes/#/
 
-## 3. 王垠的几篇博客
+## 4. 王垠的几篇博客
 
 - [再谈“P vs NP”问题](http://www.yinwang.org/blog-cn/2019/07/21/pnp2)
 
@@ -26,3 +26,9 @@
 
 - [人工智能的局限性](http://www.yinwang.org/blog-cn/2017/04/23/ai)
 - [AlphaGo与人工智能](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
+
+## 5. Sik-Ho Tsang
+
+一个 PhD Researcher 的 Paper Reading List.
+
+[https://sh-tsang.medium.com/overview-my-reviewed-paper-lists-tutorials-946ce59fbf9e](https://sh-tsang.medium.com/overview-my-reviewed-paper-lists-tutorials-946ce59fbf9e)
