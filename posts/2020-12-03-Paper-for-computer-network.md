@@ -66,7 +66,7 @@ RMI 不能直接适用于数据包分类，原因如下：
 
 NuevoMatch 成功解决了如下难题：
 
-- RQ-RMI：将密钥与范围进行匹配，并采用高效的训练算法，不需要穷尽密钥枚举来学习范围。模型可以在 35 KB 内存储 500K ClassBench 规则的索引。
+- RQ-RMI：将键（key）与范围进行匹配，并采用高效的训练算法，不需要穷尽键来学习范围。模型可以在 35 KB 内存储 500K ClassBench 规则的索引。
 - Multi-field packet classification：分类流程如 Figure 1 所示。NuevoMatch 可以看作是现有数据包分类技术的补充。
 
 ![](./20201203/1.png)
@@ -120,9 +120,9 @@ NuevoMatch 提供更有效的规则索引空间表示，以扩展到大型规则
 
 ### 3.1 Recursive Model Index（RMI）
 
-Kraska等人提出使用机器学习模型来存储键值对，将值存储在值数组中，并使用递归模型索引（RMI）来检索给定键的值。
+Kraska 等人提出使用机器学习模型来存储键值对，将值存储在值数组中，并使用递归模型索引（RMI）来检索给定键的值。
 
-RMI 使用学习了底层键-索引映射函数的模型来预测值数组中相应值的索引。
+RMI 使用学习了底层键-索引（Key-Index）映射函数的模型来预测值数组中相应值的索引。
 
 $$y = h(x)$$
 
@@ -233,8 +233,8 @@ W 是量化输出域的大小（图4）。对于每个输入范围 $[g_l，g_{l+
 ### 3.6🔴 Handling multi-dimensional queries with
 NuevoMatch 通过结合两个简单的思想来支持多维度：
 
-- 1. partitioning the rule-set into disjoint independent sets (iSets).
-- 2. performing multi-field validation of each rule. In the following.
+- 1.partitioning the rule-set into disjoint independent sets (iSets).
+- 2.performing multi-field validation of each rule. In the following.
 
 **Partitioning**
 
@@ -288,17 +288,68 @@ NuevoMatch 作为外部分类器的加速器。如果使用几个大的 iSets �
 
 ### 3.8 整合 Putting it all together
 
+NuevoMatch 的所有步骤总结如下：
 
+**训练 Training**
+
+- (1) Partition the input into iSets and a remainder set
+- (2) Train one RQ-RMI on each iSet
+- (3) Construct an external classifier for the remainder set
+
+**查询 Lookup**
+
+- (1) Query all the RQ-RMIs
+- (2) Query the external classifier
+- (3) Collect all the outputs, return the highest-priority rule
 
 ### 3.9 规则更新 Rule Updates
 
+用于剩余部分的外部分类器必须支持更新（an external classifier used for the remainder must support
+updates.），TupleMerge 是一个为快速更新而设计的。
 
+四种更新分类如下：
+
+- (i) a change in the rule action; 
+- (ii) rule deletion;
+- (iii) rule matching set change; 
+- (iv) rule addition.
+
+前两种类型的更新而不会降低性能。后两者更新需要修改 RQ-RMI 模型重新训练，因此对后两者更新后的规则总是被添加到剩余集（remainder set）中。
+
+剩余集的增大会导致性能降低，目前还不知道有什么算法可以在不重新训练的情况下更新 RQ-RMI。
+
+**估计持续更新率 Estimating sustained update rate. **
+
+- $r$：规则的总数
+- $u$：the number of updates that move a rule to the remainder.
+
+对于每一次规则更新，一条规则有 $r$ 的概率被修改。
+
+一条规则在任何一次更新中都不会被修改的概率：$(1-\frac{1}{r})^{u} \approx e^{-u/r}$。
+
+未修改规则的预期数量为：$r \cdot (1-\frac{1}{r})^u \approx r \cdot e^{-u/r}$。
+
+图 7 显示了在一定更新速率下，不同再训练速率下的吞吐量（Throughput）随时间的变化。
+
+![](./20201203/7.png)
+
+如果每隔 τ 个时间单位调用一次再训练，则训练过程越慢，性能下降越严重。
+
+使用测得的速度提升作为剩余部分的函数（ using the measured speedup as a function of the fraction of the remainder），NuevoMatch 可以为 500K 规则集维持每秒 4k 次更新，产生的速度提升约为无更新情况的一半。
 
 ## 4 实现细节 IMPLEMENTATION DETAILS
 
 
 
+## 5 评估 EVALUATION
 
+
+
+## 6 RELATED WORK
+
+
+
+## 7 总结 CONCLUSIONS
 
 
 

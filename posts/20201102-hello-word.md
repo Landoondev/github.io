@@ -70,20 +70,22 @@ $$R(a_{k}|X) = \min_{i = 1, 2, ..., M}  R(\alpha_{i}|X)$$
 
 
 
-具体做法是：
+**具体做法是：**
 
-1. 在文章头插入如下代码：
+### 方法一
 
-```
+1、在文章头插入如下代码：
+
+```html
 <head>
   <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 ```
 
-2. 将下面一行代码插入到配置文件`_config.yml`中
+2、将下面一行代码插入到配置文件`_config.yml`中
 
-```
+```shell
 markdown: kramdown
 ```
 
@@ -91,7 +93,11 @@ markdown: kramdown
 
 行间公式全部显示正常。
 
+### 方法二
 
+新增 `_layouts/default.html` 文件，将显示公式需要的 `<head></head>` 添加即可。每次加载一篇博客时，会自动加载响应的脚本，使得 LaTeX 公式正常显示。
+
+本地的 Markdown 文件是怎么的，在博客中显示就是什么样的。 
 
 ## 测试代码
 
