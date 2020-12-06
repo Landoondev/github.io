@@ -32,3 +32,11 @@
 一个 PhD Researcher 的 Paper Reading List.
 
 [https://sh-tsang.medium.com/overview-my-reviewed-paper-lists-tutorials-946ce59fbf9e](https://sh-tsang.medium.com/overview-my-reviewed-paper-lists-tutorials-946ce59fbf9e)
+
+## 6. Bit Twiddling Hacks
+
+详细的介绍了很多位运算的技巧。——来自刘宇波老师的知识星球。
+
+[https://graphics.stanford.edu/~seander/bithacks.html](https://graphics.stanford.edu/~seander/bithacks.html)
+
+还有一本书《算法心得：高效算法的奥秘》
