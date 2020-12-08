@@ -30,7 +30,7 @@
 
 ## 其他
 
-👨‍💻 [复现 Xception 时的一些疑惑和解答](./posts/20201208-Some-doubts-about-Xception)
+👨‍💻 [2020.12.08 #Xception# 复现 Xception 时的一些疑惑和解答](./posts/20201208-Some-doubts-about-Xception)
 
 📝 [2020.12.07 #读书报告# Hacker’s Delight——高效算法的奥秘](./posts/2020-12-07-Hackers-Delight)
 
