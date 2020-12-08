@@ -30,6 +30,8 @@
 
 ## 其他
 
+👨‍💻 [复现 Xception 时的一些疑惑和解答](./posts/20201208-Some-doubts-about-Xception)
+
 📝 [2020.12.07 #读书报告# Hacker’s Delight——高效算法的奥秘](./posts/2020-12-07-Hackers-Delight)
 
 📓 [2020.11.23 #笔记# 遥感题的一些笔记（感觉真的好难 Python 不熟 PyTorch 更加不熟...）](./posts/20201123-CCF-notes-1)
