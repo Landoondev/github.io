@@ -40,3 +40,15 @@
 [https://graphics.stanford.edu/~seander/bithacks.html](https://graphics.stanford.edu/~seander/bithacks.html)
 
 还有一本书《算法心得：高效算法的奥秘》
+
+## 7. I do research
+
+to save the life of our children. 查看一些著名的数据集上，目前的技术表现的情况。
+
+> Who is the best at X ?
+>
+> Did you ever want to *quickly* learn
+> which paper provides the best results on standard dataset X ?
+> Wait no more, just [click below](http://rodrigob.github.io/are_we_there_yet/build/#datasets) and discover the current state of the art.
+
+[http://rodrigob.github.io](http://rodrigob.github.io)
