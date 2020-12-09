@@ -1,8 +1,16 @@
-我能跟着网络走一遍，把每一个过程的特征图的 size 给标出来吗？
+- 我能跟着网络走一遍，把每一个过程的特征图的 size 给标出来吗？【已解决】
 
-Xception 的输入是 $[299\times299\times3]$，还有就是遇到了分叉怎么办？
+- Xception 的输入是 $[299\times299\times3]$，还有就是遇到了分叉怎么办？【通过阅读源码解决】
 
 ![](./20201208/01.png)
+
+答：遇到分叉就是直接相加。
+
+![](./20201208/02.jpg)
+
+
+
+## Xception 网络搭建
 
 ```python
 class depthwise_separable_conv(nn.Module):
@@ -134,4 +142,10 @@ class Xception(nn.Module):
         
         return output
 ```
+
+画出来了，看了代码之后就很好理解。
+
+![](./20201208/Xception-script.jpg)
+
+我觉得这是一种很好的方式，画一遍之后，对 Xception 的理解更加深刻了。因为现在 Python 和 PyTorch 都不是非常熟悉，还无法直接编程实现，需要参考官方提供的代码。以后学其他的网路结构时，也可以多画画。 
 
