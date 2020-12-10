@@ -52,3 +52,12 @@ to save the life of our children. 查看一些著名的数据集上，目前的�
 > Wait no more, just [click below](http://rodrigob.github.io/are_we_there_yet/build/#datasets) and discover the current state of the art.
 
 [http://rodrigob.github.io](http://rodrigob.github.io)
+
+## 8. 我在想
+
+我在想：
+
+- 有没有一个网址，能把 AI 届的著名论文以一种时间线的顺序列出来？
+- 在某个数据集上分类所取得的结果，当时使用的电脑配置是什么？
+
+当然这些都可以通过阅读大量的论文总结出来。有没有已经做了呢？

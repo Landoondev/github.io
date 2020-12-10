@@ -1,3 +1,9 @@
+![](./20201209/XCeption3.jpg)
+
+图片来源：https://maelfabien.github.io/deeplearning/xception/#implementation-of-the-xception
+
+
+
 - 我能跟着网络走一遍，把每一个过程的特征图的 size 给标出来吗？【已解决】
 
 - Xception 的输入是 $[299\times299\times3]$，还有就是遇到了分叉怎么办？【通过阅读源码解决】
@@ -148,4 +154,87 @@ class Xception(nn.Module):
 ![](./20201208/Xception-script.jpg)
 
 我觉得这是一种很好的方式，画一遍之后，对 Xception 的理解更加深刻了。因为现在 Python 和 PyTorch 都不是非常熟悉，还无法直接编程实现，需要参考官方提供的代码。以后学其他的网路结构时，也可以多画画。 
+
+GAP 前一层的输出是多少？
+
+我本次复现的使用代码，我代入求解之后得到的特征图大小为 $10\times10\times2048$。我看到有其他的复现代码最后输出的特征图 size 为 $19\times19\times2048$。
+
+
+
+我还不确定是谁错了。
+
+## 训练
+
+### 超参数
+
+- batch_size = 8
+- EPOCH = 20
+- learning_rate = 0.045 ，每两个 EPOCH 后，乘以 0.94 进行学习率衰减
+
+- 数据集 CIFAR-10
+- resize 32x32 -> 299x299
+- `transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2470, 0.2435, 0.2616))])`
+- 训练集划分出 10% 的验证集
+- `optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9)`
+
+第一次训练，按照论文，输入的 size 为 $299\times299$ ，我只能使用 BatchSize = 8，稍大一点就非常容易 CUDA out of memory。
+
+![](./20201209/3.png)
+
+我使用了 `batch size = 8`，EPOCH = 20，跑了差不多有 10 个小时吧。最后得出 10 个类别的平均 ACC 为：
+
+- 训练（验证集）：87%
+- 测试（测试集）：85%
+
+![](./20201209/4.png)
+
+观察 LOSS 发现完全没有收敛，如果增加 EPOCH 数，ACC 应该可以正常提升。
+
+LOSS 损失波动较大，我认为应该是 batchsize 太小了，随机梯度下降时才造成了较大的波动。
+
+而且将 Batch Size 增加之后，训练时间可以降低。$299\times299$ 确实有点大了。
+
+### 修改一些超参数
+
+尝试不要 Resize 那么大。观察网络的特征图，以 CIFAR-10 本来的大小 $32\times32$ 输入到 Xception。优化器使用 Adam，EPOCH = 100，Batch size = 128。
+
+```python
+import time
+start_time = time.localtime(time.time())
+print("Train Start at: ", start_time)
+```
+
+![](./20201209/5.PNG)
+
+100 个 EPOCH 训练了 1 个多小时，只有 65% 左右的精度。
+
+### EPOCH = 200
+
+$32\times32$ 的图片确实有点小，增加 BatchSize = 256。100 个 EPOCH 没有首先，LOSS 损失还在下降，增加到 200 个 EPOCH 试试。
+
+跑了有两个小时，ACC 只有 69% 左右。
+
+![](./20201209/6.png)
+
+
+
+## $32\times32$ Resize to $128\times128$
+
+> We can see its performance in CIFAR10. First of all, we will resize images to 75x75 which is the minimum size required by Inception v3 to work.
+>
+> https://colab.research.google.com/github/MatchLab-Imperial/deep-learning-course/blob/master/2020_05_CNN_architectures.ipynb#scrollTo=rxmx-iMnp4Wz
+
+Xception 所能接受的最小输入是：$1\times1$
+
+batch size = 256，输入为 $128\times128$ ：CUDA out of memory.
+
+batch size = 128，输入为 $128\times128$ ：CUDA out of memory.
+
+batch size = 64，输入为 $128\times128$ 。CUDA out of memory.
+
+
+
+
+
+
 
