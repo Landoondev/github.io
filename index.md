@@ -2,11 +2,11 @@
 
 ---
 
-🧭 [这些使我受到启发](./posts/2020-11-23-deeply-inspired)
+🧭 [反思和启发](./posts/2020-11-23-deeply-inspired)
 
-🔍 [常用学习资源索引](./posts/2020-11-25-helpful-resource)
+🔍 [资源导航 #*ZIGZAG*#](./posts/2020-11-25-helpful-resource)
 
-📌 [今天看算法题了吗？](./posts/2020-11-30-LeetCode-daily)
+⛳️ [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
 ---
 

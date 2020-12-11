@@ -1,8 +1,8 @@
+## 可分离卷积
+
 ![](./20201209/XCeption3.jpg)
 
 图片来源：https://maelfabien.github.io/deeplearning/xception/#implementation-of-the-xception
-
-
 
 - 我能跟着网络走一遍，把每一个过程的特征图的 size 给标出来吗？【已解决】
 
@@ -159,9 +159,7 @@ GAP 前一层的输出是多少？
 
 我本次复现的使用代码，我代入求解之后得到的特征图大小为 $10\times10\times2048$。我看到有其他的复现代码最后输出的特征图 size 为 $19\times19\times2048$。
 
-
-
-我还不确定是谁错了。
+我还不确定我哪一步错了。
 
 ## 训练
 
@@ -230,11 +228,13 @@ batch size = 256，输入为 $128\times128$ ：CUDA out of memory.
 
 batch size = 128，输入为 $128\times128$ ：CUDA out of memory.
 
-batch size = 64，输入为 $128\times128$ 。CUDA out of memory.
+batch size = 64，输入为 $128\times128$ 。It's Word!
 
+ACC = 84%。
 
+![](./20201209/7.png)
 
+晚上 22:40 开始跑到第二天早上的 6:40。
 
-
-
+ 本次实验我还没使用预训练的网络、或者使用上一步训练的网络继续开始。每次都是重新开始，导致浪费了非常多的时间（如加载 ACC=84% 的网络，在此基础之上继续进行迭代优化）。
 
