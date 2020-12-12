@@ -4,6 +4,19 @@
 
 图片来源：https://maelfabien.github.io/deeplearning/xception/#implementation-of-the-xception
 
+```python
+class depthwise_separable_conv(nn.Module):
+    def __init__(self, nin, nout, kernel_size, padding, bias=False):
+        super(depthwise_separable_conv, self).__init__()
+        self.depthwise = nn.Conv2d(nin, nin, kernel_size=kernel_size, padding=padding, groups=nin, bias=bias)
+        self.pointwise = nn.Conv2d(nin, nout, kernel_size=1, bias=bias)
+
+    def forward(self, x):
+        out = self.depthwise(x)
+        out = self.pointwise(out)
+        return out
+```
+
 - 我能跟着网络走一遍，把每一个过程的特征图的 size 给标出来吗？【已解决】
 
 - Xception 的输入是 $[299\times299\times3]$，还有就是遇到了分叉怎么办？【通过阅读源码解决】
@@ -11,6 +24,10 @@
 ![](./20201208/01.png)
 
 答：遇到分叉就是直接相加。
+
+```python
+ entry_out2 = self.entry_flow_2(entry_out1) + self.entry_flow_2_residual(entry_out1)
+```
 
 ![](./20201208/02.jpg)
 
@@ -222,7 +239,7 @@ $32\times32$ 的图片确实有点小，增加 BatchSize = 256。100 个 EPOCH �
 >
 > https://colab.research.google.com/github/MatchLab-Imperial/deep-learning-course/blob/master/2020_05_CNN_architectures.ipynb#scrollTo=rxmx-iMnp4Wz
 
-Xception 所能接受的最小输入是：$1\times1$
+Xception 所能接受的最小输入是：？
 
 batch size = 256，输入为 $128\times128$ ：CUDA out of memory.
 
@@ -237,4 +254,8 @@ ACC = 84%。
 晚上 22:40 开始跑到第二天早上的 6:40。
 
  本次实验我还没使用预训练的网络、或者使用上一步训练的网络继续开始。每次都是重新开始，导致浪费了非常多的时间（如加载 ACC=84% 的网络，在此基础之上继续进行迭代优化）。
+
+最后一次实验，使用了 200 EPOCH，大约训练了 16 小时，在最后的 ACC = 87%。
+
+![](./20201209/8.png)
 

@@ -30,6 +30,8 @@
 
 ## 其他
 
+👨‍💻 [2020.12.12 #Xception# 复现 Xception 的完整代码 Notebook](./posts/20201212-Using-PyTorch-to-achieve-ACC-of-87-percent-of-Xception-on-CIFAR-10)
+
 👨‍💻 [2020.12.08 #Xception# 复现 Xception 时的一些疑惑和解答](./posts/20201208-Some-doubts-about-Xception)
 
 📝 [2020.12.07 #读书报告# Hacker’s Delight——高效算法的奥秘](./posts/2020-12-07-Hackers-Delight)
