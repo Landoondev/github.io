@@ -30,6 +30,8 @@
 
 ## 其他
 
+📝 [2020.12.14 #作业# Dijkstra 最短路径算法](./posts/20201214-Shortest-path)
+
 🔧 [2020.12.13 #工具# macOS intall summary and tensorboard](./posts/20201213-cannot-import-is_collection_links)
 
 👨‍💻 [2020.12.12 #Xception# 复现 Xception 的完整代码 Notebook](./posts/20201212-Using-PyTorch-to-achieve-ACC-of-87-percent-of-Xception-on-CIFAR-10)
