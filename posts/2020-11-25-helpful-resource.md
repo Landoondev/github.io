@@ -58,6 +58,19 @@ to save the life of our children. 查看一些著名的数据集上，目前的�
 我在想：
 
 - 有没有一个网址，能把 AI 届的著名论文以一种时间线的顺序列出来？
-- 在某个数据集上分类所取得的结果，当时使用的电脑配置是什么？
+
+[分类任务（Image Classification）：https://paperswithcode.com/task/image-classification](https://paperswithcode.com/task/image-classification)
+
+网站列出了目前常见的数据集目前的冠军，以及历年取得重大突破的网络。
+
+- 在某个数据集上分类所取得的结果，当时使用的电脑配置是什么？我更想知道的是，论文的作者们跑了多久？
 
 当然这些都可以通过阅读大量的论文总结出来。有没有已经做了呢？
+
+## 9. 我目前的论文阅读计划
+
+- [https://paperswithcode.com/sota](https://paperswithcode.com/sota)
+- [https://sh-tsang.medium.com/overview-my-reviewed-paper-lists-tutorials-946ce59fbf9e](https://sh-tsang.medium.com/overview-my-reviewed-paper-lists-tutorials-946ce59fbf9e)
+
+
+
