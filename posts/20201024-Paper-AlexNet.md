@@ -1,5 +1,5 @@
 
-# 1 -论文
+# 1 -论文阅读
 
 研一开学已经一个多月了，本周是第 7 周。
 
@@ -28,7 +28,13 @@
 
 ---
 
-# 论文精读笔记
+# ImageNet Classification with Deep Convolutional Neural Networks
+
+AlexNet
+
+✅ 论文地址：[http://www.cs.toronto.edu/~hinton/absps/imagenet.pdf](http://www.cs.toronto.edu/~hinton/absps/imagenet.pdf)
+
+✅ 发表时间：2012 年
 
 ## 论文的结构
 

@@ -1,5 +1,9 @@
 #  Network In Network 论文阅读
 
+✅ 论文地址：[https://arxiv.org/pdf/1312.4400.pdf](https://arxiv.org/pdf/1312.4400.pdf)
+
+✅ 论文发表时间：2014 年
+
 ![](./20201215/0.png)
 
 论文提出了一种名为 “**N**etwork **I**n **N**etwork” (NIN) 的神经网络结构。与传统 CNN 不同的是，NIN 建立了更加复杂的微神经网络来抽象感受野中的数据。

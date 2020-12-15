@@ -12,7 +12,7 @@
 
 ## 论文阅读
 
-📚 [2020.12.08 #NIN# Network In Network](./posts/20201215-network-in-network)
+📚 [2020.12.15 #NIN# Network In Network](./posts/20201215-network-in-network)
 
 📚 [2020.12.08 #Xception# Xception: Deep Learning with Depthwise Separable Convolutions](./posts/20201208-Xception)
 
