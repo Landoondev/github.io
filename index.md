@@ -12,13 +12,15 @@
 
 ## 论文阅读
 
+📚 [2020.12.08 #NIN# Network In Network](./posts/20201215-network-in-network)
+
 📚 [2020.12.08 #Xception# Xception: Deep Learning with Depthwise Separable Convolutions](./posts/20201208-Xception)
 
 📚 [2020.12.06 #NuevoMatch# 数据包分类的一些补充](./posts/2020-12-06-supplement-for-Packet-Classification)
 
 📚 [2020.12.03 #*NuevoMatch*# A Computational Approach to Packet Classification](./posts/2020-12-03-Paper-for-computer-network)
 
-📚 [2020.11.24 #深度学习综述# Deep Learning Review](./posts/DeepLearning-Review)
+📚 [2020.11.24 #深度学习综述# Deep Learning Review](./posts/20201124-DeepLearning-Review)
 
 📚 [2020.11.23 #VGG# Very Deep Convolutional Networks for Large-Scale Image Recognition](./posts/2020-11-23-Paper-VGG)
 
