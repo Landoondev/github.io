@@ -12,6 +12,8 @@
 
 ## 论文阅读
 
+> 我的论文阅读清单✅
+
 📚 [2020.12.15 #NIN# Network In Network](./posts/20201215-network-in-network)
 
 📚 [2020.12.08 #Xception# Xception: Deep Learning with Depthwise Separable Convolutions](./posts/20201208-Xception)
@@ -30,32 +32,43 @@
 
 ---
 
-## 其他
+## 论文复现
 
-📝 [2020.12.14 #作业# Dijkstra 最短路径算法](./posts/20201214-Shortest-path)
-
-🔧 [2020.12.13 #工具# macOS intall summary and tensorboard](./posts/20201213-cannot-import-is_collection_links)
+> 看完一些论文后跑的代码✅
 
 👨‍💻 [2020.12.12 #Xception# 复现 Xception 的完整代码 Notebook](./posts/20201212-Using-PyTorch-to-achieve-ACC-of-87-percent-of-Xception-on-CIFAR-10)
 
 👨‍💻 [2020.12.08 #Xception# 复现 Xception 时的一些疑惑和解答](./posts/20201208-Some-doubts-about-Xception)
 
+👨‍💻 [2020.11.15 #AlexNet# AlexNet 复现-完结 82% Accuracy](./posts/20201115-AlexNet-81-precent-accuracy)
+
+👨‍💻 [2020.11.09 #AlexNet, code# CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
+
+## 其他
+
+> 瞎搞搞，不成体系，难成气候。
+
+📝 [2020.12.14 #作业# Dijkstra 最短路径算法](./posts/20201214-Shortest-path)
+
+🔧 [2020.12.13 #工具# macOS intall summary and tensorboard](./posts/20201213-cannot-import-is_collection_links)
+
 📝 [2020.12.07 #读书报告# Hacker’s Delight——高效算法的奥秘](./posts/2020-12-07-Hackers-Delight)
 
 📓 [2020.11.23 #笔记# 遥感题的一些笔记（感觉真的好难 Python 不熟 PyTorch 更加不熟...）](./posts/20201123-CCF-notes-1)
 
-👨‍💻 [2020.11.15 #AlexNet# AlexNet 复现-完结 82% Accuracy](./posts/20201115-AlexNet-81-precent-accuracy)
-
 👨‍💻 [2020.11.13 #code# HTTP Server 轻笔记（2）](./posts/20201113-http)
-
-👨‍💻 [2020.11.09 #AlexNet, code# CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
 
 📝 [2020.11.07 #作业# HTTP ➜ HTTPS: C 语言从 0 开始构建服务器（1）](/posts/20201107-HTTP-Server-1)
 
 📝 [2020.11.06 #作业#  Prim 算法&Kruskal 算法求最小生成树](posts/20201106-prim-kruskal)
 
-📓 [2020.11.03 #笔记# SVM 1  $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导](posts/20201103-SVM-notes)
-
 🔧 [2020.10.30 #工具# macOS 安装 Mininet 进行网络实验](posts/20201030-macOS-install-Mininet)
 
 💡 [2020.11.02 Hello Word](posts/20201102-hello-word)
+
+## 课程学习笔记
+
+> 系统性的学习一些内容非常重要的。
+
+- [2020.12.18 #算法# 国科大计算机算法设计与分析](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
+- [2020.11.03 #PRML# SVM $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导（1）](posts/20201103-SVM-notes)
