@@ -68,7 +68,9 @@
 
 ## 课程学习笔记
 
-> 系统性的学习一些内容非常重要的。
+> 系统性的学习一些课程是非常重要的✅
+
+- [2020.12.18 #计算机网络# 国科大计算机网络](./posts/20201218-UCAS-computer-network)
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 - [2020.11.03 #PRML# SVM $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导（1）](posts/20201103-SVM-notes)
