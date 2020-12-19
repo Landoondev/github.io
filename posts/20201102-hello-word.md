@@ -137,10 +137,4 @@ int main() {
 
 参考的是 [https://cjting.me/](https://cjting.me/) 博客主题，我特别喜欢。只需要配置 `style="box-shadow: 0 8px 10px #959da5;"`。
 
-```HTML
-<main id="content" class="main-content" role="main" style="box-shadow: 0 8px 10px #959da5;">
-  {{ content }}
-</main>
-```
-
 2020.12.19
