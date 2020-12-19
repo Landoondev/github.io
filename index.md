@@ -64,7 +64,7 @@
 
 🔧 [2020.10.30 #工具# macOS 安装 Mininet 进行网络实验](posts/20201030-macOS-install-Mininet)
 
-💡 [2020.11.02 Hello Word 关于我的 Blog|如何创建、创建目的及其一些配置](posts/20201102-hello-word)
+💡 [2020.11.02 Hello Word 关于我的 Blog 及其一些配置](posts/20201102-hello-word)
 
 ## 课程学习笔记
 
