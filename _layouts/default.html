@@ -13,7 +13,7 @@
   <body>
     <header style="text-align:center">
       <img src="./logo.png" width="75" height="75">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
       {% if site.github.is_project_page %}
@@ -27,7 +27,7 @@
 
     </header>
 
-    <main id="content" class="main-content" role="main" style="padding: 20px; box-shadow: 0 8px 10px #959da5; border-radius: 5px; max-width: 720px; box-sizing: border-box; margin: 20px auto;">
+    <main id="content" style="padding: 20px; box-shadow: 0 8px 10px #959da5; border-radius: 5px; max-width: 720px; box-sizing: border-box; margin: 20px auto;">
       {{ content }}
     </main>
 
