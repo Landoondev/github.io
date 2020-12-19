@@ -4,27 +4,27 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <meta charset="UTF-8">
-
-    {% seo %}
+{% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <!-- class="page-header" role="banner" -->
     <header style="text-align:center">
       <img src="./logo.png" width="75" height="75">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="{{ site.github.repository_url }}">View on GitHub</a>
       {% endif %}
       {% if site.show_downloads %}
-        <a href="{{ site.github.home }}" class="btn">Home</a>
-        <a href="{{ site.github.about }}" class="btn">About</a>
-        <a href="https://github.com/landodo" class="btn">GitHub</a>
+        <a href="{{ site.github.home }}">Home</a>
+        <a href="{{ site.github.about }}">About</a>
+        <a href="https://github.com/landodo">GitHub</a>
       {% endif %}
+      
     </header>
 
     <main id="content" class="main-content" role="main" style="box-shadow: 0 8px 10px #959da5;">
