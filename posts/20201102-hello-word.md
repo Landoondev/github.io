@@ -1,7 +1,17 @@
 
-# Hello World
+# 关于我的 Blog
 
 这个博客的建立时间是 2020 年 11 月 02 日。
+
+## 博客主题
+
+[https://github.com/pages-themes/cayman](https://github.com/pages-themes/cayman)
+
+我进行了很多自定义配置，包括支持公式、访客统计、阴影框等等。我看到一些我喜欢的元素，就会添加到我的这里。
+
+如果你也想使用和我一样的 Blog 主题，可以直接阅读我的配置文件源码，很简单的。
+
+## 博客的内容
 
 此时我正在读研一，这个博客将会伴随我之后的三年研究生生活。
 
@@ -28,6 +38,8 @@ git push origin main
 
 ## 测试插入公式
 
+能显示公式，是我的核心需求之一。
+
 已知共有 $M$ 样本，各类别 $w_{i}, i = 1, 2, ..., M$ 的先验概率 $$P(w_{i})$$ 以及类条件概率密度函数
 
 $$P(X|w_{i})$$
@@ -45,8 +57,6 @@ $$h_{i}(X) = P(X|w_{i})P(w_{i}) = \frac{1}{(2\pi)^{n/2}|S_{i}|^{1/2}}e^{[-\frac{
 使用对数函数进行简化，得：
 
 $$H_{i}(X) = -\frac{1}{2}(X - \bar{X^{w_i}})^TS^{-1}_{i}(X - \bar{X^{w_i}})-\frac{n}{2}ln2\pi-\frac{1}{2}|S_{i}|+lnP(w_i)$$
-
-
 
 - 基于多类问题最小风险贝叶斯决策规则判别函数形式 
 
@@ -68,8 +78,6 @@ $$R(\alpha_{i}|X) = \sum^{M}_{j = 1}\lambda(\alpha_{i}, j)P(w_{j}|W), \qquad i =
 
 $$R(a_{k}|X) = \min_{i = 1, 2, ..., M}  R(\alpha_{i}|X)$$
 
-
-
 **具体做法是：**
 
 ### 方法一
@@ -89,64 +97,42 @@ $$R(a_{k}|X) = \min_{i = 1, 2, ..., M}  R(\alpha_{i}|X)$$
 markdown: kramdown
 ```
 
-经过测试发现，行内公式有些显示不正常，如类条件概率密度。
-
-行间公式全部显示正常。
-
 ### 方法二
 
 新增 `_layouts/default.html` 文件，将显示公式需要的 `<head></head>` 添加即可。每次加载一篇博客时，会自动加载响应的脚本，使得 LaTeX 公式正常显示。
+
+我现在使用的就是方法二。
 
 本地的 Markdown 文件是怎么的，在博客中显示就是什么样的。 
 
 ## 测试代码
 
+能显示代码，是我的核心需求之一。
+
 ```c++
-// Quick Sort
-#include <iostream>
+// hello.c
+#include <stdio.h>
 
-using namespace std;
-
-int partition(int A[], int l, int r) {
-  int v = A[l];  // 为了方便分析取第一个数作为基准值
-                  // 实践中可以随机，避免快排退化： 
-                  // int r = l + rand() % (r - l + 1);
-                  // swap(A[r], A[l]);
-                  // int v = A[l];
-  int i = l + 1;
-  int j = r;
-  while (true) {
-    while (i <= r && A[i] <= v)
-      i++;
-    while (j > l && A[j] > v)
-      j--;
-    if (i >= j) // 结束循环
-      break;
-    swap(A[i++], A[j--]);
-  }
-  swap(A[l], A[j]);
-  return j;
+int main() {
+  printf("hello, world\n");
+  return 0;
 }
-
-void print_res(int A[], int n) {
-  for (int i = 0; i < n; ++i) {
-    cout << A[i] << " ";
-  }
-  cout << endl;
-}
-
-void quick_sort(int A[], int l, int r) {
-  if (l >= r)
-    return;
-  
-  int p = partition(A, l, r);
-  quick_sort(A, l, p - 1);
-  quick_sort(A, p+1, r);
-}
-
-void quick_sort(int A[], int n) {
-  quick_sort(A, 0, n - 1);
-}
-
 ```
 
+## 添加阅读数和访客量
+
+使用的是不蒜子。两行代码，搞定计数。
+
+[https://busuanzi.ibruce.info/](https://busuanzi.ibruce.info/)
+
+## 给 main 标签新增的阴影框
+
+参考的是 [https://cjting.me/](https://cjting.me/) 博客主题，我特别喜欢。只需要配置 `style="box-shadow: 0 8px 10px #959da5;"`。
+
+```HTML
+<main id="content" class="main-content" role="main" style="box-shadow: 0 8px 10px #959da5;">
+  {{ content }}
+</main>
+```
+
+2020.12.19
