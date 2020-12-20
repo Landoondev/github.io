@@ -14,7 +14,7 @@
     <header style="text-align:center">
       <img src="./logo.png" width="75" height="75" style="margin-top: 20px">
       <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h3 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
 
       {% if site.show_downloads %}
         <a href="{{ site.github.home }}">Home&nbsp;</a>
