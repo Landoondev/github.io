@@ -138,3 +138,7 @@ int main() {
 参考的是 [https://cjting.me/](https://cjting.me/) 博客主题，我特别喜欢。只需要配置 `style="box-shadow: 0 8px 10px #959da5;"`。
 
 2020.12.19
+
+## 又更新首页样式了
+
+删除了 cayman 的 header 标签样式，显示首页一片白，非常整洁。
