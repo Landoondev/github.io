@@ -142,3 +142,48 @@ int main() {
 ## 又更新首页样式了
 
 删除了 cayman 的 header 标签样式，显示首页一片白，非常整洁。
+
+## 增加了 Scroll To Top Button
+
+2020.12.21. 在阅读别人的 Blog 时，看到这个功能挺好的。添加到我的博客。
+
+```html
+<!-- Go to Top: https://stackoverflow.com/questions/15935318/smooth-scroll-to-top -->
+<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+<button id="to_top_btn" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Top</button>
+<style>
+  #to_top_btn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#to_top_btn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+<script>
+  //Get the button:
+  mybutton = document.getElementById("to_top_btn");
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+</script>
+```
+
