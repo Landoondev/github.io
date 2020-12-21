@@ -12,7 +12,12 @@
 
 目前在学习机器学习、深度学习相关知识，以及：思考人生。
 
+- C++
+- Python
 
+## ⚓️其他
+
+- macOS 操作系统玩得很溜。
 
 ---
 
@@ -49,10 +54,24 @@ GPA = 3.23 （专业前 10% ） ｜ 连续 3 年获得专业奖学金（2 次二
 
 - 担任智能机器人实验室助理 （大二学年 2017-09 至 2018-06 ）
 
+# About My Blog
 
+关于我的博客的一些配置：[#关于我的 Blog.](https://landodo.github.io/posts/20201102-hello-word)
+
+如果你也想应用于你的博客：
+
+- 可以直接复制我的博客 [https://github.com/landodo/landodo.github.io](https://github.com/landodo/landodo.github.io) 所有内容，然后删除 `post/`  目录下的所有文章、修改 `_index.md/logo.png/_config.yml` 这三个文件的内容。
+
+```shell
+➜  landodo.github.io git:(main) ls
+README.md   _config.yml _layouts/    about.md    index.md    logo.png    posts/
+```
+
+- **或者**拷贝样式文件 default.html 。博客的样式为了方便，我将 HTML/CSS/JavaScript 全部写在一个文件下。文件路径 `landodo.github.io/_layouts/default.html`。
 
 ---
 
 ## 更新时间线
 
 - 2020 年 11 月 02 日：创建了此页面，添加了本科的基本情况。
+- 2020 年 12 月 21 日：新增了 About My Blog 小节。

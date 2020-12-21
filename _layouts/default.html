@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <!-- LaTeX formula support. -->
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
     <meta charset="UTF-8">
-{% seo %}
+    {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+    <!-- Header -->
     <header style="text-align:center">
       <!-- logo image -->
       <img src="./logo.png" width="75" height="75" style="margin-top: 20px">
@@ -18,7 +21,7 @@
       <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
       <!-- slogan: description -->
       <h3 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
-      <!-- Home  About  GitHub -->
+      <!-- Hyperlink: Home  About  GitHub -->
       {% if site.show_downloads %}
         <a href="{{ site.github.home }}">Home&nbsp;</a>
         <a href="{{ site.github.about }}">&nbsp;About&nbsp;</a>
@@ -33,7 +36,7 @@
       </main>
     </div>
 
-    <!-- Go to Top: https://stackoverflow.com/questions/15935318/smooth-scroll-to-top -->
+    <!-- Go to Top Button: https://stackoverflow.com/questions/15935318/smooth-scroll-to-top -->
     <!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
     <button id="to_top_btn" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Top</button>
     <style>
@@ -45,7 +48,6 @@
       z-index: 99; /* Make sure it does not overlap */
       border: none; /* Remove borders */
       outline: none; /* Remove outline */
-      /*background-color: 179957;  Set a background color */
       background: rgb(23, 153, 87, 0.6);
       color: white; /* Text color */
       cursor: pointer; /* Add a mouse pointer on hover */
@@ -55,9 +57,10 @@
     }
 
     #to_top_btn:hover {
-      background-color: #555; /* Add a dark-grey background on hover */
+      background: rgb(192, 192, 192, 0.5);
     }
     </style>
+
     <script>
       //Get the button:
       mybutton = document.getElementById("to_top_btn");
@@ -72,7 +75,7 @@
       }
     </script>
 
-
+    <!-- Footer PV and UV -->
      <footer class="site-footer" style= "text-align:center; margin-bottom: 5px">
         <span class="site-footer-credits">©Landon</span>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
