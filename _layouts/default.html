@@ -12,16 +12,18 @@
   </head>
   <body>
     <header style="text-align:center">
+      <!-- logo image -->
       <img src="./logo.png" width="75" height="75" style="margin-top: 20px">
+      <!-- Landon -->
       <h2 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
+      <!-- slogan: description -->
       <h3 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
-
+      <!-- Home  About  GitHub -->
       {% if site.show_downloads %}
         <a href="{{ site.github.home }}">Home&nbsp;</a>
         <a href="{{ site.github.about }}">&nbsp;About&nbsp;</a>
         <a href="https://github.com/landodo">&nbsp;GitHub </a>
       {% endif %}
-
     </header>
     
     <!-- Blog Content -->
@@ -32,13 +34,14 @@
     </div>
 
     <!-- Go to Top: https://stackoverflow.com/questions/15935318/smooth-scroll-to-top -->
-    <button id="to_top_btn" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Scroll to Top</button>
+    <!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+    <button id="to_top_btn" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Top</button>
     <style>
       #to_top_btn {
       display: none; /* Hidden by default */
       position: fixed; /* Fixed/sticky position */
       bottom: 20px; /* Place the button at the bottom of the page */
-      right: 30px; /* Place the button 30px from the right */
+      right: 15px; /* Place the button 30px from the right */
       z-index: 99; /* Make sure it does not overlap */
       border: none; /* Remove borders */
       outline: none; /* Remove outline */
@@ -46,7 +49,7 @@
       color: white; /* Text color */
       cursor: pointer; /* Add a mouse pointer on hover */
       padding: 15px; /* Some padding */
-      border-radius: 10px; /* Rounded corners */
+      border-radius: 50%; /* Rounded corners */
       font-size: 18px; /* Increase font size */
     }
 
@@ -59,7 +62,6 @@
       mybutton = document.getElementById("to_top_btn");
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
-
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           mybutton.style.display = "block";
