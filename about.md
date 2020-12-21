@@ -46,9 +46,9 @@ GPA = 3.23 （专业前 10% ） ｜ 连续 3 年获得专业奖学金（2 次二
 ### 🏅荣誉奖项
 
 - 世界机器人大赛（团队赛）—— 共融机器人挑战赛 —— 完成挑战，获得国家级技术潜力奖（2018 年）
-- 蓝桥杯大赛-C51 单片机程序设计（个人赛）—— **“****室内温度采集器****”** —— 获得湖北省**二**等奖（2018 年）
+- 蓝桥杯大赛-C51 单片机程序设计（个人赛）—— **“室内温度采集器”** —— 获得湖北省**二**等奖（2018 年）
 - 智能循迹车设计竞赛（个人赛）—— 在 20 支队伍中排名第 3 名 ，获得计算机学院**一**等奖（2017 年）
-- 全国大学生电子设计大赛（团队赛） —— **“****可见光的室内定位****”** —— 获得湖北省**三**等奖（2017 年）
+- 全国大学生电子设计大赛（团队赛） —— **“可见光的室内定位”** —— 获得湖北省**三**等奖（2017 年）
 
 ### 社团组织经历
 
@@ -56,18 +56,7 @@ GPA = 3.23 （专业前 10% ） ｜ 连续 3 年获得专业奖学金（2 次二
 
 # About My Blog
 
-关于我的博客的一些配置：[#关于我的 Blog.](https://landodo.github.io/posts/20201102-hello-word)
-
-如果你也想应用于你的博客：
-
-- 可以直接复制我的博客 [https://github.com/landodo/landodo.github.io](https://github.com/landodo/landodo.github.io) 所有内容，然后删除 `post/`  目录下的所有文章、修改 `_index.md/logo.png/_config.yml` 这三个文件的内容。
-
-```shell
-➜  landodo.github.io git:(main) ls
-README.md   _config.yml _layouts/    about.md    index.md    logo.png    posts/
-```
-
-- **或者**拷贝样式文件 default.html 。博客的样式为了方便，我将 HTML/CSS/JavaScript 全部写在一个文件下。文件路径 `landodo.github.io/_layouts/default.html`。
+关于我的博客的一些配置：[#2020.11.02 关于我的 Blog 及其一些配置](https://landodo.github.io/posts/20201102-hello-word)
 
 ---
 
