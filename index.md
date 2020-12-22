@@ -1,14 +1,6 @@
-<h1 align='center'> Home </h1>
+<h1 align='center'> Home Page </h1>
 
----
-
-🧭 [反思和启发](./posts/2020-11-23-deeply-inspired)
-
-🔍 [资源导航 #*ZIGZAG*#](./posts/2020-11-25-helpful-resource)
-
-⛳️ [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
-
----
+[TOC]
 
 ## 论文阅读
 
@@ -70,7 +62,19 @@
 
 > 系统性的学习一些课程是非常重要的✅
 
-- [2020.12.18 #计算机网络# 国科大计算机网络](./posts/20201218-UCAS-computer-network)
+- [2020.12.22 #计算机网络# 国科大计算机网络复习（2020 秋季学期）（2）](./posts/2020-UCAS-computer-network-review)
 
-- [2020.12.18 #算法# 国科大计算机算法设计与分析](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
+- [2020.12.18 #计算机网络# 国科大计算机网络（1）](./posts/20201218-UCAS-computer-network)
+
+- [2020.12.18 #算法# 国科大计算机算法设计与分析（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 - [2020.11.03 #PRML# SVM $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导（1）](posts/20201103-SVM-notes)
+
+---
+
+## 习惯
+
+🧭 [反思和启发](./posts/2020-11-23-deeply-inspired)
+
+🔍 [资源导航 #*ZIGZAG*#](./posts/2020-11-25-helpful-resource)
+
+⛳️ [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
