@@ -8,10 +8,12 @@ OSI (Open Systems Interconnection) 参考模型和 TCP/IP 模型
 
 TCP/IP 四层模型的代表协议：
 
-- 网络接口层：ARP 协议（IP addr ---ARP--->MAC addr）
-- IP 网络层：IP、ARP、RARP、DNS、ICMP、BGP 等协议。
-- 传输层：TCP 和 UDP 协议
-- 应用层：HTTP、SMTP、DNS、FTP
+- 网络接口层（Link Layer）：ARP 协议（IP addr ---ARP--->MAC addr）
+- IP 网络层（Internet Layer）：IP、ICMP、IGMP 等协议。
+- 传输层（Transport Layer）：TCP 和 UDP 协议
+- 应用层（Application Layer）：HTTP、SMTP、DNS、FTP、SSH、DHCP、Telnet
+
+
 
 数据传输单位：
 
