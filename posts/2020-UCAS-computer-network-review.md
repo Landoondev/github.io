@@ -55,16 +55,16 @@ TCP/IP 四层模型的代表**协议**：
 
 ```
 Initialization:
-	cwnd <- initial cwnd
+  cwnd <- initial cwnd
 if cwnd < ssthresh:
   for each ack:
-		cwnd += 1
+    cwnd += 1
 else:
   for each ack:
-		cwnd += 1/cwnd
+    cwnd += 1/cwnd
 when encountering loss:
-	ssthresh <- cwnd
-	cwnd <- cwnd/2
+  ssthresh <- cwnd
+  cwnd <- cwnd/2
 ```
 
 TCP 锯齿状窗口行为。
