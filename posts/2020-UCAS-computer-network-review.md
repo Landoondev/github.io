@@ -38,7 +38,9 @@ TCP/IP 四层模型的代表**协议**：
 - OSI 参考模型的最大贡献就是精确定义了三个主要概念：服务、接口和协议。这与现代的面向对象程序设计思想非常吻合。
 - OSI 参考模型产生在协议发明之前，通用性较好。
 
-## 2. TCP
+## 2. TCP 的拥塞控制
+
+![](./network/18.jpeg)
 
 ### 2.1 慢启动
 
@@ -49,13 +51,29 @@ TCP/IP 四层模型的代表**协议**：
 - 每收到 ACK，窗口值加 1
 
 慢启动并不慢
-- 在没有丢包情况下，经过log2(target_cwnd/initial_cwnd)个RTT长到目标窗口大小
+- 在没有丢包情况下，经过 log2(target_cwnd/initial_cwnd) 个 RTT 长到目标窗口大小
+
+```
+Initialization:
+	cwnd <- initial cwnd
+if cwnd < ssthresh:
+  for each ack:
+		cwnd += 1
+else:
+  for each ack:
+		cwnd += 1/cwnd
+when encountering loss:
+	ssthresh <- cwnd
+	cwnd <- cwnd/2
+```
+
+TCP 锯齿状窗口行为。
 
 ### 2.2 快速重传
 
 - 一般情况下，先发送的数据包应该先到达。如果后发送的数据包先被确认，可推测先发送的数据包丢失。
 - 如果一个数据包后面的**三个**数据包都被确认，而该数据包还未收到确认，则认定该数据包丢失，并重传该数据包。
-- 数据包通常都是连续发送的。快速重传通常可以在1个RTT内重传数据丢包。
+- 数据包通常都是连续发送的。快速重传通常可以在 1 个 RTT 内重传数据丢包。
 
 **为什么需要等 3 个后续数据包的确认?**
 
@@ -91,6 +109,22 @@ TCP/IP 四层模型的代表**协议**：
 
 - (1) TCP 端设备遇到丢包时，认为网络拥塞，减慢发送速率（发送速率（窗口大小）减半）
 - (2) TCP 端设备定期通过增大发送速率来探测更多可用带宽（每个 RTT，窗口值增加一个数据包大小）
+
+### ✅ 3.4 几种拥塞控制的方法总结
+
+RFC 2581 定义了进行拥塞控制的四种算法，即慢开始（slow-start）、拥塞避免（congestion avoidance）、快重传（fast retransmit）和快恢复（fast recovery）。
+
+**（1）慢开始（slow-start）和拥塞避免（congestion avoidance）**
+
+![](./network/16.png)
+
+**（2）快重传（fast retransmit）和快恢复（fast recovery）**
+
+发送方只要一连收到三个重复确认就应当立即重传对方尚未收到的报文段 M3，而不必继续等待为 M3 设置的重传计时器到期。
+
+![](./network/17.png)
+
+快恢复（fast recovery）门限 `ssthresh = cwnd / 2; cwnd = ssthresh; `
 
 ## 4. 简述从输入网页网址到获得相关网页内容的步骤
 
