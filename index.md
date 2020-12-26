@@ -60,6 +60,8 @@
 
 > 系统性的学习一些课程是非常重要的✅
 
+- [2020.12.26 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（2）](./posts/20201226-20201226-UCAS-Advanced-artificial-intelligence-II)
+
 - [2020.12.26 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（1）](./posts/20201226-UCAS-Advanced-artificial-intelligence)
 
 - [2020.12.24 #计算机网络# 国科大计算机网络复习（2020 秋季学期）（3）](./posts/20201224-UCAS-computer-network-review)
