@@ -111,7 +111,9 @@ A* 树搜索的最优性条件是：启发函数是一致的。
 - 沿路径的节点估计耗散 f 值单调递增 $h(A) ≤ cost(A\  to\  C) + h(C)$
 - A* 图搜索具备最优性
 
-A* 图搜索的最优性条件是：启发函数是一致的。
+✅ A* 图搜索的最优性条件是：启发函数是一致的。
+
+✅ A* 树搜索的最优性条件是：启发函数是可采纳的。
 
 ### 1.5 Deep Belief Networks 网络结构
 
@@ -164,7 +166,7 @@ Deep Learning 的常用模型：
 
 输入与输出的尺寸关系：
 
-- $n \times n \ images, \ f \times f \ fileter, padding \ p, stride \ s $
+- $n \times n \ images, \ f \times f \ filter, padding \ p, stride \ s $
 - $\left\lfloor \frac{n+2p-f}{s} + 1 \right\rfloor \times \left\lfloor \frac{n+2p-f}{s} + 1 \right\rfloor $
 
 池化 Pooling
@@ -447,9 +449,7 @@ end while
 
 ![](./20201226/11.jpeg)
 
-- 加速度参数：控制粒子当前最优位置 $p^{(i)}_{best}$ 和粒子群当前最优位置 $g_{best}$ 对粒子飞行速度的影响。
-
-更新每个粒子的位置公式解读：
+- 加速度参数：控制粒子当前最优位置 $ p^{(i)}_{best} $ 和粒子群当前最优位置 $ g_{best} $ 对粒子飞行速度的影响。
 
 ![](./20201226/12.jpeg)
 
