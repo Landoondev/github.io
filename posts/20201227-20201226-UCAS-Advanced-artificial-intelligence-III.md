@@ -52,5 +52,7 @@ $$\forall x (Person(x) \wedge Loser(x)) \Rightarrow kou(x)$$
 
 ## 5. 模糊逻辑
 
+![](./20201227/4.jpeg)
+
 
 
