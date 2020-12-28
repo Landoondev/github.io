@@ -34,7 +34,7 @@
 
 ![](./20201227/6.jpeg)
 
-### 1.7 转换为合取范式（5 步法）（大题）
+### 1.7 转换为合取范式（4 步法）（大题）
 
 ![](./20201227/7.jpeg)
 
@@ -53,15 +53,15 @@
 
 - $$\forall x [\forall y \ Animal(y) \Rightarrow Loves(x, y)] \Rightarrow [\exists y \ Loves(y, x)]$$
   - Step 1：处理 $\Rightarrow$
-    - $$\forall x [\neg \forall y \ \neg Animal(y) \vee Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
+    - $$\neg \forall x [ \forall y \ \neg Animal(y) \vee Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
   - Step 2：处理 $\neg$
     - $$\forall x [\forall y \neg \neg Animal(y) \wedge  \neg Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
   - Step 3：处理存在量词 $\exists \ \forall$，Standardize variables
-    - $$\forall x [Animal(F(x)) \wedge \neg Loves(x, F(x))] \vee [Loves(y, G(x))]$$
+    - $$\forall x [Animal(F(x)) \wedge \neg Loves(x, F(x))] \vee [Loves(G(x), x)]$$
   - Step 4：Drop universal quantifiers:
-    - $$[Animal(F(x)) \wedge \neg Loves(x, F(x))] \vee Loves(y, G(x))$$
+    - $$[Animal(F(x)) \wedge \neg Loves(x, F(x))] \vee Loves(G(x),x)$$
   - Step 5：分配率
-    - $$[Animal(F(x)) \vee Loves(y, G(x))] \wedge [\neg Loves(x, F(x)) \vee Loves(y, G(x))]​$$
+    - $$[Animal(F(x)) \vee Loves(G(x),y)] \wedge [\neg Loves(x, F(x)) \vee Loves(G(x),x)]$$
 
 ### 1.10 构造一阶谓词逻辑的知识库 KB 和句子 $\alpha$
 
@@ -103,6 +103,21 @@ $$\forall x (Person(x) \wedge Loser(x)) \Rightarrow kou(x)$$
 ## 5. 模糊逻辑
 
 ![](./20201227/4.jpeg)
+
+## 6. 证明 A* 树搜索最优
+
+> A* **树**搜索最优的条件是：启发函数是可采纳的。
+
+证明：
+
+- 如果启发函数 $h(n)$ 是可采纳的，那么树搜索的 A* 算法是最优的。
+- 如何启发函数是一致性的，那么图搜索的 A* 算法是最优的。
+
+![](./20201227/8.jpeg)
+
+
+
+
 
 
 
