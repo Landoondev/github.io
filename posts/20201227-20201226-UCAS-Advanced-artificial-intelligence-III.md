@@ -41,15 +41,16 @@
 ### 1.8 基本等值式有 3 个最为常用和重要
 
 - 分配率：
-  - $$P \vee (Q \wedge R) \Leftrightarrow (P \vee Q) \wedge (P \vee R)$$
-  - $$P \wedge (Q \vee R) \Leftrightarrow (P \wedge Q) \vee (P \wedge R)$$
+  - $$P \vee (Q \wedge R) <==> (P \vee Q) \wedge (P \vee R)$$
+  - $$P \wedge (Q \vee R) <==> (P \wedge Q) \vee (P \wedge R)$$
 - 摩根率：  
-  - $$\neg (P \vee Q) \Leftrightarrow \neg P \wedge \neg Q$$
-  - $$\neg (P \wedge Q) \Leftrightarrow \neg P \vee \neg Q$$
+  - $$\neg (P \vee Q) <==> \neg P \wedge \neg Q$$
+  - $$\neg (P \wedge Q) <==> \neg P \vee \neg Q$$
 - 蕴涵等值式：
-  - $$P \Rightarrow Q \Leftrightarrow \neg P \vee Q$$
+  - $$P \Rightarrow Q <==> \neg P \vee Q$$
+  - $$P \Leftrightarrow Q <==> (P \Rightarrow Q) \wedge (Q \Rightarrow P)$$
 
-### 1.9 带有**存在量词**的一阶谓词逻辑的句子转换为合取范式**（5 步法）**
+### ß1.9 带有**存在量词**的一阶谓词逻辑的句子转换为合取范式**（5 步法）**
 
 - $$\forall x [\forall y \ Animal(y) \Rightarrow Loves(x, y)] \Rightarrow [\exists y \ Loves(y, x)]$$
   - Step 1：处理 $\Rightarrow$
@@ -79,10 +80,15 @@ $\neg \alpha : \exists y \ P(y)$（目标取反），将 KB 与 $\alpha$ 转化�
 ## 2. “永真”（valid） ？
 
 - $(Smoke \Rightarrow Fire) \Rightarrow ((Smoke \wedge Heat) \Rightarrow Fire)$
+  - 转换为合取范式：
+  - Step 1：$$\neg (\neg Smoke \vee Fire) \vee (\neg (Smoke \wedge Heat) \vee Fire)$$
+  - Step 2：$$(Smoke \wedge \neg Fire) \vee ((\neg Smoke \vee \neg Heat) \vee Fire)$$
+  - Step 3：$$(Smoke \vee \neg Smoke \vee \neg Heat \vee Fire) \wedge (\neg Fire \vee \neg Smoke \vee \neg Heat \vee Fire)$$
+  - $$(True) \wedge (True) $$
 
 ## 3. “不可满足”（un-satisfiable）？
 
-不可满足公式：谓词公式在任一解释下都为假。例如：
+不可满足：谓词公式在任一解释下都为假。例如：
 
 - $$\forall x (P(x) \wedge \neg P(x))$$
 - $$\forall x P(X) \wedge \exists x (\neg P(x))$$
@@ -91,6 +97,7 @@ $\neg \alpha : \exists y \ P(y)$（目标取反），将 KB 与 $\alpha$ 转化�
 
 - $\beta \vDash \alpha$ 为真，当且仅当 $(\beta \wedge \neg \alpha)$ 是不可满足的。
 - 既不是 “永真” 的，又不是 “不可满足的”：$(Smoke \vee Heat) \Rightarrow (Smoke \wedge Heat)$
+  - 即：它有真有假。
 
 ## 4. 一阶谓词逻辑
 
