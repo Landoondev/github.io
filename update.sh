@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "First arg: $1"
-echo "Second arg: $2"
+echo "$1"
 git add .
-git commit -m "update"
+git commit -m "$1"
 git push origin main
