@@ -232,17 +232,47 @@ Deep Learning 的常用模型：
 >
 > 自动化所吴老师
 
-感知器实质上是一种神经元模型。
+**（1）感知器（Perceptron）简述：**
 
-感知器特性：
+- 感知器是对生物神经元的计算数学模拟，有着与神经元相对于的部件，如权重（突触）、偏置（阈值）及激活函数（细胞体）。
+- 感知器是一种简单的两类线性分类模型：$\check{y} = sgn(w^T x)$。
+- 感知器的学习算法是一种错误驱动的在线学习算法，每分错一个样本，就会使用这个样本来更新权重。
+- 感知器算法的损失函数为
+  - $$L(w;x,y)=max(0,-yw^Tx)$$
+- 采用随机梯度下降算法，每次更新的梯度为：
+  - $$\frac{\partial L(w;x,y)}{\partial w}=\begin{cases} 0, &if &yw^Tx > 0 \\ -yx & if & yw^Tx < 0\end{cases} $$
+- 权重更新：$w \leftarrow w + yx$
+
+**（2）感知器特性：**
 
 - 可分性：true if some parameters get the training set perfectly correct Can represent AND, OR, NOT, etc., but not XOR.
 - 感知器收敛定理：若训练数据集是线性可分的，则感知机模型收敛。
 
-缺点：
+**（3）缺点：**
 
 - 噪声（不可分情况）
 - 泛化性
+
+### 1.7 反向传播 BackPropagation
+
+[图源：nndl, P94]
+
+![](./20201227/10.jpeg)
+
+> $$dW^{(l)} = \delta^{(l)} \cdot a^{(l-1)}$$
+>
+> $$db^{(l)} = \delta^{(l)} \cdot 1$$ 
+>
+> 参数更新：
+>
+> - $$W^{(l)} = W^{(l)} - \alpha dW^{(l)}$$
+> - $$b^{(l)} = b^{(l)} - \alpha db^{(l)}$$
+
+第 $l​$ 层的误差项可以通过第 $l+1​$ 层的误差项计算得到，这就是误差的**反向传播（BackPropagation, BP）**。
+
+**反向传播算法的含义：**
+
+- 第 $l$ 层的一个神经元的误差项是所有与该神经元相连的第 $l+1$ 层的神经元的误差项的权重和，然后再乘以该神经元激活函数的梯度。
 
 ### 1.8 LSTM
 
