@@ -54,9 +54,9 @@
 
 - $$\forall x [\forall y \ Animal(y) \Rightarrow Loves(x, y)] \Rightarrow [\exists y \ Loves(y, x)]$$
   - Step 1：处理 $\Rightarrow$
-    - $$\neg \forall x [ \forall y \ \neg Animal(y) \vee Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
-  - Step 2：处理 $\neg$
-    - $$\forall x [\forall y \neg \neg Animal(y) \wedge  \neg Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
+    - $$\forall x [\neg \forall y \ \neg Animal(y) \vee Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
+  - Step 2：处理 $\neg​$（注意存在量词的变化）
+    - $$\forall x [\exists y \neg \neg Animal(y) \wedge  \neg Loves(x, y)] \vee [\exists y \ Loves(y, x)]$$
   - Step 3：处理存在量词 $\exists \ \forall$，Standardize variables
     - $$\forall x [Animal(F(x)) \wedge \neg Loves(x, F(x))] \vee [Loves(G(x), x)]$$
   - Step 4：Drop universal quantifiers:
