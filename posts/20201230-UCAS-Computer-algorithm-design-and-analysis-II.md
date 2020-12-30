@@ -160,6 +160,12 @@ $$n = 7, M = 15, (p1, p2, p3, p4, p5, p6, p7)=\{10, 5, 15, 7, 6, 18, 3\}, (w1, w
 
 ![](./20201230/3.png)
 
+动态规划算法解决背包问题递推式：
+
+$$F(i, j) = \begin{cases} max(F(i-1, j), v_i + F(i-1, j-w_i)), &j-w_i \geqslant 0\\ F(i-1, j),& j-w_i < 0\end{cases} $$
+
+
+
 GREEDY-KNAPSACK 解：
 
 ![](./20201230/4.png)
