@@ -109,7 +109,81 @@ n 的的增大而增大。当输入的有序数组中，目标值有重复时，
 我还是乱画了一下（没有体现时间线），但是核心在于最后几次归并，把一个小的有序段归入到一个很大的有序段中，我想要表达的是这个：
 ![](./20201230/1.jpeg)
 
-**6、快速排序？**
+```C++
+#include <iostream>
+#include <cmath> // sqrt
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+// 将数组 A[l ... mid-1] 和 A[mid ... r] 进行归并
+void merge(int A[], int l, int mid, int r) {
+  int* aux = new int[r - l + 1];
+  assert(aux);
+  for (int i = l; i <= r; ++i)
+    aux[i - l] = A[i];
+
+  int i = l;
+  int j = mid;
+  for (int k = l; k <= r; ++k) {
+    if (i > mid-1) { // 左半部分结束
+      A[k] = aux[j - l];
+      j++;
+    }
+    else if (j > r) { // 右半部分结束
+      A[k] = aux[i - l];
+      i++;
+    }
+    else if (aux[i - l] < aux[j - l]) {
+      A[k] = aux[i - l];
+      i++;
+    }
+    else { // aux[i - l] > aux[j - l] 
+      A[k] = aux[j - l];
+      j++;
+    }
+  }
+  // 释放辅助空间
+  delete [] aux;
+  aux = nullptr;
+}
+
+// A[l,r] 之间的根号n段进行归并
+void merge_sqrt_n(int A[], int l, int r) {
+  int j = (int)sqrt(r - l + 1);
+  for (int i = 0; i < j; ++i)
+    merge(A, l, l + i*j, l + (i+1)*j - 1);
+  merge(A, l, l + j*j, r);
+}
+
+// 递归进行 √n 段划分
+void merge_sort(int A[], int l, int r) {
+  if (l >= r)
+    return;
+  
+  int j = (int)sqrt(r - l + 1);
+  if (j >= 1) {
+    for (int i = 0; i < j; ++i)  // √n 段
+      merge_sort(A, l + i*j, l + (i + 1)*j - 1);
+    // 剩余的段
+    merge_sort(A, l + j*j, r);
+  }
+  // 归并A[l,r] 之间的根号n段
+  merge_sqrt_n(A, l, r);
+}
+
+// 供用户调用的接口
+// n 为数组 A[] 的元素个数
+void merge_sort(int A[], int n) {
+  merge_sort(A, 0, n - 1);
+}
+
+```
+
+
+
+6、快速排序？**
 
 partition 操作：
 
