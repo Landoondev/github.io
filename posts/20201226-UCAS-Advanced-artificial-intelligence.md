@@ -1,5 +1,29 @@
 # 国科大高级人工智能（2020 秋季学期）（1）
 
+> Update：2020 年 12 月29 日晚考完，我现在有印象的知识点如下：
+>
+> - 选择题，基本去年原题，一分钟写完。
+> - 简答题：
+>   - 描述蚁群或粒子群
+>   - 简述 BP
+>   - 残差网络
+>   - 如何使用 RNN 搭建一个机器翻译系统，给出你的方案
+> - 大题
+>   - 证明 A* 树搜索的最优性
+>   - 成绩好 $\rightarrow$ 刻苦，一阶谓词逻辑，类似胜者为王败者为寇。
+>   - 证明 $KB \vDash \alpha$。
+>   - 化为合取范式，类似[（3）](https://landodo.github.io/posts/20201227-20201226-UCAS-Advanced-artificial-intelligence-III) 中的 $\forall x [\forall y \ Animal(y) \Rightarrow Loves(x, y)] \Rightarrow [\exists y \ Loves(y, x)]$ 原题
+>   - 归结
+>   - 格子问题
+>
+> - 注意：简答题的 ResNet 和 RNN 应该是今年新出的，其他的题目都中规中矩。
+>
+> 我的三篇复习笔记：
+>
+> - [2020.12.27 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（3）](https://landodo.github.io/posts/20201227-20201226-UCAS-Advanced-artificial-intelligence-III)
+> - [2020.12.26 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（2）](https://landodo.github.io/posts/20201226-20201226-UCAS-Advanced-artificial-intelligence-II)
+> - [2020.12.26 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（1）](https://landodo.github.io/posts/20201226-UCAS-Advanced-artificial-intelligence)
+
 面向题目复习法
 
 2018 年卷
@@ -266,9 +290,9 @@ Deep Learning 的常用模型：
 > 参数更新：
 >
 > - $$W^{(l)} = W^{(l)} - \alpha dW^{(l)}$$
-> - $$b^{(l)} = b^{(l)} - \alpha db^{(l)}$$
+> - $$b^{(l)} = b^{(l)} - \alpha db^{}$$
 
-第 $l​$ 层的误差项可以通过第 $l+1​$ 层的误差项计算得到，这就是误差的**反向传播（BackPropagation, BP）**。
+第 $l$ 层的误差项可以通过第 $l+1$ 层的误差项计算得到，这就是误差的**反向传播（BackPropagation, BP）**。
 
 **反向传播算法的含义：**
 
