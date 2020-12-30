@@ -74,6 +74,8 @@
 
 - [2020.12.18 #计算机网络# 国科大计算机网络复习（2020 秋季学期）（1）](./posts/20201218-UCAS-computer-network)
 
+- [2020.12.30 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（3）](./posts/20201230-algorithm-review-III)
+
 - [2020.12.30 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（2）](./posts/20201230-UCAS-Computer-algorithm-design-and-analysis-II)
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
