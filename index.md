@@ -80,6 +80,8 @@
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 
+- [2020.12.31 #PRML# 国科大模式识别（2020 秋季学期）（2）](./posts/20201231-UCAS-PRML-review-II)
+
 - [2020.11.03 #PRML# SVM $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导（1）](posts/20201103-SVM-notes)
 
 ---
