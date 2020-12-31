@@ -86,7 +86,7 @@
 
 ## 习惯
 
-🧭 [反思和启发](./posts/2020-11-23-deeply-inspired)
+🧭 [致自己](./posts/2020-11-23-To-myself)
 
 🔍 [资源导航 #*ZIGZAG*#](./posts/2020-11-25-helpful-resource)
 
