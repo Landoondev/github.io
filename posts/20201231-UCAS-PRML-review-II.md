@@ -55,7 +55,9 @@ $$\xi_i \geq 0$$
 
 $$C \uparrow \Rightarrow \xi \downarrow \Rightarrow (1-\xi) \uparrow \Rightarrow 容错能力 \downarrow \Rightarrow Overfitting$$
 
-## 贝叶斯分类
+记住：$\xi = 0$ 就是 Hard Margin。
+
+## n贝叶斯分类
 
 贝叶斯分类：观察值为 $x$，$y$ 有正常（$y=1$） 和异常（$y=0$）两种状态。
 
