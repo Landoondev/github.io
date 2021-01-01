@@ -14,7 +14,8 @@
 
 - 类内散度矩阵 $S_w$：
   - $$S_w = \sum_{i=1}^{3} P(w_i) E \{ (x_i - m_1)(x_i - m_i)^T \mid w_i \}$$
-    - $E \{ (x_i - m_1)(x_i - m_i)^T \mid w_i \}$ ：以 $w_1$ 为例，有
+    - 其中：$$E \{ (x_i - m_1)(x_i - m_i)^T \mid w_i \}$$
+    - 以 $w_1​$ 为例，有
     - (i) $$X_1 = \left[ \begin{matrix}1&2&1\\ 0&0&1\end{matrix} \right] $$ 
     - (ii) $$m_1 = \left[ \begin{matrix} \frac{4}{3} \\ \frac{1}{3} \end{matrix} \right]  $$
     - $$\Rightarrow (X_1 - m_1)(X_1 - m_1)^T = \left[ \begin{matrix}&\\ &\end{matrix} \right]_{2\times 2}  $$
