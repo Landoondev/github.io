@@ -71,8 +71,9 @@ Logistic 回归的优点：
 （2）Logistic回归如何将回归和分类结合起来？Logistic 回归中拟合的是什么❓
 
 - $$w^T x = log \frac{p(y = 1 \mid x)}{1 - p(y = 1 \mid x)}$$
-- Logistic 回归可以看作预测值为“标签的对数几率”的线性回归模型。因此，Logistic 回归也称为对数几率回归 (Logit Regression). 因此，拟合的对数几率。
+- Logistic 回归可以看作预测值为“标签的对数几率”的线性回归模型。因此，Logistic 回归也称为对数几率回归 (Logit Regression)。因此，拟合的是对数几率。
 - 交叉熵（Cross-entropy Loss）：用于度量两个概率分布（真实分布&预测分布）之间的差异性。
+- Logistic 回归模型输出对应标签的后验概率：$\check{y}^{(n)} = \delta(w^T x^{(n)})$
 
 > PS：要多多看书。结合好几本书来看，就很容易懂。网络上资源参差不齐，初学是最好的资料就是多看工具书。
 >
