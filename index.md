@@ -80,11 +80,13 @@
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 
-- [2020.01.01 #PRML# 国科大模式识别（2020 秋季学期）（4）](./posts/20210101-UCAS-PRML-review-IV)
+- [2020.01.01 #PRML# 散度矩阵（$S_w,S_b$）和 K-L 降维分类（5）](./posts/20210101-UCAS-PRML-V)
 
-- [2021.01.01 #PRML# 国科大模式识别（2020 秋季学期）（3）](./posts/20210101-UCAS-PRML-review-III)
+- [2020.01.01 #PRML# 2019-2020 试卷（4）](./posts/20210101-UCAS-PRML-review-IV)
 
-- [2020.12.31 #PRML# 国科大模式识别（2020 秋季学期）（2）](./posts/20201231-UCAS-PRML-review-II)
+- [2021.01.01 #PRML# 朴素贝叶斯（Naive Bayes classifier）和 Logistic 回归（3）](./posts/20210101-UCAS-PRML-review-III)
+
+- [2020.12.31 #PRML# 彻底搞懂感知器（Perceptron）（2）](./posts/20201231-UCAS-PRML-review-II)
 
 - [2020.11.03 #PRML# SVM $$\min_{w,b}\frac{1}{2}\left\Vert w\right\Vert^2_2$$ 的推导（1）](posts/20201103-SVM-notes)
 
