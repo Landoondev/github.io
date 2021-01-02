@@ -66,7 +66,7 @@ Logistic 回归的优点：
 
 - 使用线性回归算法
   - 假设函数：$h_\theta (x) = \theta_0 + \theta_1 x$
-  - 代价函数最小化即可：$J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})$
+  - 代价函数最小化即可：$J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})^2$
 
 （2）Logistic回归如何将回归和分类结合起来？Logistic 回归中拟合的是什么❓
 
