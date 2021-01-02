@@ -80,9 +80,11 @@
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 
-- [2020.01.01 #PRML# 散度矩阵（$S_w,S_b$）和 Fisher 降维分类（5）](./posts/20210101-UCAS-PRML-V)
+- [2021.01.02 #PRML# 所有的作业题](./posts/20210102-UCAS-PRML-review-6)
 
-- [2020.01.01 #PRML# 2019-2020 试卷（4）](./posts/20210101-UCAS-PRML-review-IV)
+- [2021.01.01 #PRML# 散度矩阵（$S_w,S_b$）和 Fisher 降维分类（5）](./posts/20210101-UCAS-PRML-V)
+
+- [2021.01.01 #PRML# 2019-2020 试卷（4）](./posts/20210101-UCAS-PRML-review-IV)
 
 - [2021.01.01 #PRML# 朴素贝叶斯（Naive Bayes classifier）和 Logistic 回归（3）](./posts/20210101-UCAS-PRML-review-III)
 
