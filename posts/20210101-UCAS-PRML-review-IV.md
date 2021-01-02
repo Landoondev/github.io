@@ -79,7 +79,7 @@ K-L（Karhunen-Loeve） 变换即 PCA。
   - (i) $\left\vert \lambda E - A \right\vert = 0 $ 解出特征值 
   - (II) $(\lambda E - A) x = 0$ 解出特征向量
 - （3）如果要降到 2 维，则需要选择出最大的前两个特征值对应的特征向量，得到变换矩阵：
-  - $$\Phi = \left[ \begin{matrix} \eta_{1} &\eta_{2} \end{matrix} \right]  ​$$
+  - $$\Phi = \left[ \begin{matrix} \eta_{1} &\eta_{2} \end{matrix} \right]  $$
 
 - （4）由 $Y = \Phi’ X$ 得到降维后的数据。
   - ![](./20210101/2.jpeg)
