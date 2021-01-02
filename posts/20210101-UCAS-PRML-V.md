@@ -1,4 +1,4 @@
-# PRML 计算散度矩阵和 K-L 变换（5）
+# PRML 计算散度矩阵和 Fisher 降维分类（5）
 
 ## 1. 类间散度矩阵 $S_b$ 和类内散度矩阵 $S_w$ 的计算
 
@@ -15,11 +15,11 @@
 - 类内散度矩阵 $S_w$：
   - $$S_w = \sum_{i=1}^{3} P(w_i) E \{ (x_i - m_1)(x_i - m_i)^T \mid w_i \}$$
     - 其中：$$E \{ (x_i - m_1)(x_i - m_i)^T \mid w_i \}$$
-    - 以 $w_1​$ 为例，有
+    - 以 $w_1$ 为例，有
     - (i) $$X_1 = \left[ \begin{matrix}1&2&1\\ 0&0&1\end{matrix} \right] $$ 
     - (ii) $$m_1 = \left[ \begin{matrix} \frac{4}{3} \\ \frac{1}{3} \end{matrix} \right]  $$
     - $$\Rightarrow (X_1 - m_1)(X_1 - m_1)^T = \left[ \begin{matrix}&\\ &\end{matrix} \right]_{2\times 2}  $$
-- 类间散度矩阵 $S_b$：
+- 类间散度矩阵 $S_b​$：
   - $$S_b = \sum_{i=1}^{3} P(w_i)(m_i - m_0)(m_i - m_0)^T$$
 
 （0）先验概率 $P(w_1) = P(w_2) = P(w_3) = \frac{1}{3}$
@@ -55,7 +55,7 @@ $$S_w = \frac{1}{3} \left\{ \left[ \begin{matrix}&\\ &\end{matrix} \right]_{2\ti
 
 ---
 
-## K-L 降维
+## Fisher 降维分类
 
 计算出 $S_w$ 和 $S_b$ 之后，Fisher 的准则函数为：
 

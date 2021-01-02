@@ -80,7 +80,7 @@
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 
-- [2020.01.01 #PRML# 散度矩阵（$S_w,S_b$）和 K-L 降维分类（5）](./posts/20210101-UCAS-PRML-V)
+- [2020.01.01 #PRML# 散度矩阵（$S_w,S_b$）和 Fisher 降维分类（5）](./posts/20210101-UCAS-PRML-V)
 
 - [2020.01.01 #PRML# 2019-2020 试卷（4）](./posts/20210101-UCAS-PRML-review-IV)
 
