@@ -1,6 +1,6 @@
 <h1 align='center'> Home Page </h1>
 
-## 论文阅读
+## I 论文阅读
 
 > 我的论文阅读清单✅
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 论文复现
+## II 论文复现
 
 > 看完一些论文后跑的代码✅
 
@@ -34,7 +34,7 @@
 
 👨‍💻 [2020.11.09 #AlexNet, code# CIFAR-10、PyTorch 和 AlexNet](./posts/20201109-AlexNet-code)
 
-## 其他
+## III 其他
 
 > 瞎搞搞，不成体系，难成气候。
 
@@ -58,7 +58,7 @@
 
 💡 [2020.11.02 Hello Word 关于我的 Blog 及其一些配置](posts/20201102-hello-word)
 
-## 课程学习笔记
+## IV 课程学习笔记
 
 > 系统性的学习一些课程是非常重要的✅
 
@@ -80,7 +80,7 @@
 
 - [2020.12.18 #算法# 国科大计算机算法设计与分析（2020 秋季学期）（1）](./posts/20201218-UCAS-Computer-algorithm-design-and-analysis)
 
-- [2021.01.02 #PRML# 所有的作业题](./posts/20210102-UCAS-PRML-review-6)
+- [2021.01.02 #PRML# 所有的作业题（6）](./posts/20210102-UCAS-PRML-review-6)
 
 - [2021.01.01 #PRML# 散度矩阵（$S_w,S_b$）和 Fisher 降维分类（5）](./posts/20210101-UCAS-PRML-V)
 
@@ -94,7 +94,7 @@
 
 ---
 
-## 习惯
+## V 习惯
 
 🧭 [📌📌📌致自己：⛳ ⛳ ⛳ ⛳ ⛳ ⛳ ⛳ ](./posts/2020-11-23-To-myself)
 
