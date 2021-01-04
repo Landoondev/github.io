@@ -66,6 +66,19 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboard
 
 ![](./20201213/7.png)
 
+---
+
+2021.01.04 更新一段测试代码
+
+```python
+import torch
+from torchvision import models
+from torchsummary import summary
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+vgg = models.vgg16().to(device)
+summary(vgg, (3, 224, 224))
+```
+
 
 
 
