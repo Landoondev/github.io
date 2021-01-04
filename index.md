@@ -62,6 +62,8 @@
 
 > 系统性的学习一些课程是非常重要的✅
 
+- [2021.01.04 #高级人工智能# 2020 CCF BDCI: 遥感影像地块分割课程报告](./posts/20210104-UCAS-AI-Course-Report)
+
 - [2020.12.27 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（3）](./posts/20201227-20201226-UCAS-Advanced-artificial-intelligence-III)
 
 - [2020.12.26 #高级人工智能# 国科大高级人工智能复习（2020 秋季学期）（2）](./posts/20201226-20201226-UCAS-Advanced-artificial-intelligence-II)
