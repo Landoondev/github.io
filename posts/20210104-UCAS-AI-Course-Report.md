@@ -675,3 +675,9 @@ Save model checkpoint to ./saved_model/unet/6
 1. 我这次的作业没有组队是一个遗憾，我的目前知识储备还较难以取得一个理想的成绩。
 2. 深度学习在训练的时候真的好消耗时间（1 个 EPOCH ≈ 30 分钟），需要一台配置非常好的电脑。
 3. 这个数据集我保存下来了，后期我会使用较为熟悉的 PyTorch 实现这个分割任务，以及尝试采用一个更加先进的分割网络。
+
+---
+
+PPT
+
+[2020 CCF BDCI 遥感影像地块分割 PPT](./2020-CCF-BDCI-Remote-Sensing-Image-Block-Segmentation-PPT.pdf)
