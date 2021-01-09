@@ -4,7 +4,7 @@
 
 ## 1. 小组成员
 
-兰冬雷+2020E8015382008
+兰冬雷 + 2020E8015382008
 
 ## 2. 选题内容
 
@@ -25,6 +25,20 @@
 | 类别   | 建筑 | 耕地 | 林地 | 水体 | 道路 | 草地 | 其他 | 未标注数据 |
 | ------ | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--------: |
 | 像素值 |  0   |  1   |  2   |  3   |  4   |  5   |  6   |    255     |
+
+```python
+palette = {
+    # bgr
+    "[64, 128, 0]": 2,   # forest
+    "[192, 128, 96]": 3, # water
+    "[0, 128, 64]": 1,   # filed
+    "[64, 64, 96]": 6,   # else
+    "[192, 128, 32]": 4, # road
+    "[0, 128, 96]": 0,   # building
+    "[64, 128, 64]": 5,  # grass
+    "[255, 255, 255]": 255,
+}
+```
 
 提交的预测结果为 zip 压缩包（ccf_baidu_remote_sense.zip），压缩包中包含与测试集（img_testA）中的文件名相同的单通道 PNG 图片。
 
@@ -83,7 +97,112 @@ dada/
 
 ## 4. 解题思路
 
-U-Net
+### 4.1 图像分割
+
+图像分割中常见的术语是：superpixels（超像素）、Semantic Segmentation（语义分割）、Instance Segmentation（实例分割）、Panoptic Segmentation（全景分割）。
+
+语义分割（Semantic Segmentation）：
+
+- 关注如何将图像分割成属于不同语义类别的区域，这些语义区域的标注和预测都是像素级的。
+- 与目标检测相比，语义分割标注的像素级的边框显然更加精细。
+- 语义分割只能判断类别，无法区分个体。
+
+实例分割（Instance Segmentation）：
+
+- 研究如何识别图像中各个目标实例的像素级区域。
+- 与语义分割有所不同，实例分割不仅需要区分语义，还要区分不同的目标实例。如果图像中有两只狗，实例分割需要区分像素属于这两只狗中的哪一只。
+
+全景分割（Panoptic Segmentation）是语义分割和实例分割的结合。
+
+**2020 CCF BDCI: 遥感影像地块分割**就是一道语义分割题，图像中的每个像素都被分类到其各自的类。
+
+![](./20210104/10.png)
+
+### 4.2 分割网络 U-Net
+
+#### 4.2.1 全卷机网络（FCN）
+
+> Fully Convolutional Networks for Semantic Segmentation
+
+FCN 从抽象的特征中恢复出每个像素所属的类别，即从图像级别的分进一步延伸到像素级别分类。
+
+![](./20210104/11.jpeg)
+
+采用反卷积层对最后一个卷积层的 Feature map 进行上采样，使它恢复到输入图像相同的尺寸，从而可以对每个像素都产生了一个预测，同时保留了原始输入图像中的空间信息，最后在上采样的特征图上进行逐像素分类。
+
+缺点：
+
+- 分割结果不够精细，细节不敏感。
+- 没有充分考虑像素与像素之间的关系。
+
+#### 4.2.2 U-Net
+
+> U-Net: Convolutional Networks for Biomedical Image Segmentation
+
+U-Net 最大的特点是 ”U“ 型对称结构和 skip connection。
+
+U-Net 是 FCN 的一个改进。
+
+![](./20210104/u-net-architecture.png)
+
+U-Net的 encoder 下采样 4 次，一共下采样 16 倍。对称地，其 decoder 也相应上采样 4 次，将 encoder 得到的高级语义特征图恢复到原图片的分辨率。
+
+U-Net 在医学图像分割上表现的特别好，成为大多做医疗影像语义分割任务的 baseline。
+
+一些常见的图像分割网络包括：SegNet、RefineNet、PSPNet、DeepLab、Mask-R-CNN、DenseNet 等。
+
+在遥感图像分割比赛中，提供一些预训练好的分割网络，包括：deeplabv3、unet、pspnet、hrnet、fast_scnn、ocrnet。
+
+```python
+model_urls = {
+  # COCO pretrained
+    "deeplabv3p_mobilenetv2-1-0_bn_coco":
+    "https://paddleseg.bj.bcebos.com/deeplab_mobilenet_x1_0_coco.tgz",
+    "deeplabv3p_xception65_bn_coco":
+    "https://paddleseg.bj.bcebos.com/models/xception65_coco.tgz",
+    "unet_bn_coco":
+    "https://paddleseg.bj.bcebos.com/models/unet_coco_v3.tgz",
+    "pspnet50_bn_coco":
+    "https://paddleseg.bj.bcebos.com/models/pspnet50_coco.tgz",
+    "pspnet101_bn_coco":
+    "https://paddleseg.bj.bcebos.com/models/pspnet101_coco.tgz",
+
+    # Cityscapes pretrained
+    "deeplabv3p_mobilenetv3_large_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/deeplabv3p_mobilenetv3_large_cityscapes.tar.gz"
+    "deeplabv3p_mobilenetv2-1-0_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/mobilenet_cityscapes.tgz",
+    "deeplabv3p_xception65_gn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/deeplabv3p_xception65_cityscapes.tgz",
+    "deeplabv3p_xception65_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/xception65_bn_cityscapes.tgz",
+    "deeplabv3p_resnet50_vd_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/deeplabv3p_resnet50_vd_cityscapes.tgz",
+    "unet_bn_coco":
+    "https://paddleseg.bj.bcebos.com/models/unet_coco_v3.tgz",
+    "icnet_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/icnet_cityscapes.tar.gz",
+    "pspnet50_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/pspnet50_cityscapes.tgz",
+    "pspnet101_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/pspnet101_cityscapes.tgz",
+    "hrnet_w18_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/hrnet_w18_bn_cityscapes.tgz",
+    "fast_scnn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/fast_scnn_cityscape.tar",
+    "ocrnet_w18_bn_cityscapes":
+    "https://paddleseg.bj.bcebos.com/models/ocrnet_w18_bn_cityscapes.tar.gz",
+}
+```
+
+
+### 4.3 图像分割常用的数据集
+
+- Pascal VOC
+
+- MS COCO
+
+- City Scapes
 
 ## 5. 实现过程
 
@@ -213,6 +332,22 @@ img_testA/A145983.jpg
 至此数据集已经准备完成。
 
 ### 5.3 下载 COCO Pretrained 模型
+
+[COCO](<https://cocodataset.org/#home>) （Common Objects in Context）是一个大规模的对象检测（Detection）、分割（Segmentation）和描述（Captioning）的数据集。
+
+![](./20210104/coco-icons.png)
+
+COCO 有以下几个特点：
+
+- 对象检测（Object segmentation）
+- 上下文识别（Recognition in context）
+- 超像素物体分割（Superpixel stuff segmentation）
+- 330K 图片
+- 150 万对象实例
+- 80 对象类别
+- 91 物体类别
+- 每张图片的 5 个描述
+- 25 万人的关键点
 
 下载一个经过 COCO 预训练的模型，加快训练速度。
 
@@ -462,6 +597,18 @@ epoch=1 step=120 lr=0.01000 loss=0.6254 step/sec=2.263 | ETA 27:25:02
 
 
 
+### 5.6 提交分割结果
+
+训练完成后，使用如下的命令进行评估。
+
+```powershell
+python pdseg/eval.py --use_gpu --cfg ./unet.yaml
+```
+
+最终的结果产生在 `visual` 文件夹下，包含与测试集（img_testA）中的文件名相同的单通道 PNG 图片。
+
+![](./20210104/9.png)
+
 ## 6. 实现结果
 
 指标平均交并比 $MIoU$，记真实值为 $i$，预测为 $j$  的像素数量为 $p_{ij}$：
@@ -495,9 +642,36 @@ epoch=2 step=8940 lr=0.00964 loss=0.3193 step/sec=2.259 | ETA 26:23:12
 Save model checkpoint to ./saved_model/unet/2
 ```
 
+EPOCH = 3，**loss = 0.2968.**
 
+```shell
+epoch=3 step=13410 lr=0.00946 loss=0.2968 step/sec=2.262 | ETA 25:47:44
+Save model checkpoint to ./saved_model/unet/3
+```
 
+EPOCH = 4，**loss = 0.2857.**
 
+```powershell
+epoch=4 step=17880 lr=0.00928 loss=0.2857 step/sec=2.261 | ETA 25:15:35
+Save model checkpoint to ./saved_model/unet/4
+```
+
+EPOCH = 5，**loss = 0.3391.**
+
+```
+epoch=5 step=22350 lr=0.00910 loss=0.3391 step/sec=2.262 | ETA 24:42:08
+Save model checkpoint to ./saved_model/unet/5
+```
+
+EPOCH = 6，**loss = 0.2846.**
+
+```powershell
+epoch=6 step=26820 lr=0.00891 loss=0.2846 step/sec=2.255 | ETA 24:13:53
+Save model checkpoint to ./saved_model/unet/6
+```
 
 ## 7. 作业总结
 
+1. 我这次的作业没有组队是一个遗憾，我的目前知识储备还较难以取得一个理想的成绩。
+2. 深度学习在训练的时候真的好消耗时间（1 个 EPOCH ≈ 30 分钟），需要一台配置非常好的电脑。
+3. 这个数据集我保存下来了，后期我会使用较为熟悉的 PyTorch 实现这个分割任务，以及尝试采用一个更加先进的分割网络。
