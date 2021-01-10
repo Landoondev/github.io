@@ -107,3 +107,10 @@
 🔍 [资源导航 #*ZIGZAG*#](./posts/2020-11-25-helpful-resource)
 
 ⛳️ [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
+
+---
+
+## VI 组会、讲座等笔记
+
+- [2021.01.10 #组会# 课题组组会](./posts/20210110-group-meeting)
+
