@@ -172,5 +172,282 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 %run?
 ```
 
-## 3-3 NumPy 数据基础
+## 3-3 numpy.array 基础
+
+与 Python 中的 List 和 Array 比较进行学习。
+```python
+import numpy
+```
+
+
+```python
+numpy.__version__
+```
+
+
+
+
+    '1.19.2'
+
+
+
+
+```python
+import numpy as np
+```
+
+
+```python
+np.__version__
+```
+
+
+
+
+    '1.19.2'
+
+
+
+### Python List 的特点
+
+
+```python
+L = [i for i in range(10)]
+L
+```
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+```python
+L[5]
+```
+
+5
+
+
+```python
+L[5] = 100
+L
+```
+
+[0, 1, 2, 3, 4, 100, 6, 7, 8, 9]
+
+
+```python
+L[5] = "Machine Learning"
+```
+
+
+```python
+L
+```
+
+[0, 1, 2, 3, 4, 'Machine Learning', 6, 7, 8, 9]
+
+**灵活带来的缺点是，效率太低。**
+
+
+```python
+import array
+```
+
+
+```python
+arr = array.array('i', [i for i in range(10)])
+```
+
+
+```python
+arr
+```
+
+
+
+
+    array('i', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
+
+```python
+arr[5]
+```
+
+
+
+
+    5
+
+
+
+
+```python
+arr[5] = 100
+```
+
+
+```python
+arr
+```
+
+
+
+
+    array('i', [0, 1, 2, 3, 4, 100, 6, 7, 8, 9])
+
+
+
+
+```python
+arr[5] = "Machine Learning"  # 报错 TypeError: an integer is required (got type str)
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    TypeError                                 Traceback (most recent call last)
+    
+    <ipython-input-25-618ae4a54130> in <module>
+    ----> 1 arr[5] = "Machine Learning"  # 报错 TypeError: an integer is required (got type str)
+
+
+    TypeError: an integer is required (got type str)
+
+
+array 也不方便。numpy.array 应运而生。
+
+
+```python
+nparr = np.array([i for i in range(10)])
+nparr
+```
+
+
+
+
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
+
+```python
+nparr[5]
+```
+
+
+
+
+    5
+
+
+
+
+```python
+nparr[5] = 100
+nparr
+```
+
+
+
+
+    array([  0,   1,   2,   3,   4, 100,   6,   7,   8,   9])
+
+
+
+
+```python
+nparr[5] = "Machine Learning" # invalid literal for int() with base 10: 'Machine Learning'
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    ValueError                                Traceback (most recent call last)
+    
+    <ipython-input-24-3538820512ea> in <module>
+    ----> 1 nparr[5] = "Machine Learning"
+
+
+    ValueError: invalid literal for int() with base 10: 'Machine Learning'
+
+
+
+```python
+nparr.dtype
+```
+
+
+
+
+    dtype('int64')
+
+
+
+
+```python
+nparr[5] = 5.0
+nparr
+```
+
+
+
+
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
+
+```python
+nparr.dtype
+```
+
+
+
+
+    dtype('int64')
+
+
+
+
+```python
+nparr[3] = 3.14 # 浮点数自动截位
+nparr
+```
+
+
+
+
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
+
+```python
+nparr.dtype
+```
+
+
+
+
+    dtype('int64')
+
+
+
+
+```python
+nparr2 = np.array([1, 2, 3.0])
+```
+
+
+```python
+nparr2.dtype
+```
+
+
+
+
+    dtype('float64')
+
+
 

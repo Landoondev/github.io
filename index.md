@@ -8,6 +8,8 @@
 
 > 我的论文阅读清单✅
 
+📚 [2021.01.12 #SENet# Squeeze-and-Excitation Networks](./posts/20210112-SENet)
+
 📚 [2020.12.15 #NIN# Network In Network](./posts/20201215-network-in-network)
 
 📚 [2020.12.08 #Xception# Xception: Deep Learning with Depthwise Separable Convolutions](./posts/20201208-Xception)
