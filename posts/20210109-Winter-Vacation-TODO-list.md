@@ -25,7 +25,7 @@
     - [3-7 numpy.array 中的运算: Universal Function](./20210113-imooc-ml-3-7-numpy)
     - [3-8 Numpy 中的聚合操作：min、max](./20210113-imooc-ml-3-8)
     - [ 3-9 numpy 中的 arg 运算：索引](./20210113-imooc-ml-3-9)
-    - [3-10 numpy中的比较运算和 Fancy Indexing](./20210113-imooc-ml-3-10)
+    - [3-10 numpy中的比较运算和 Fancy Indexing](./20210113-imooc-ml-3-100)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
