@@ -20,7 +20,6 @@
 
   - [第一、二章]
     - [1-1 什么是机器学习、1-2 课程涵盖内容和理念、1-3 技术栈、2-1 机器学习世界的数据、2-2 机器学习的主要啊任务 2-3 监督、非监督、半监督、强化学习、2-4 批量学习、在线学习、参数、非参数学习、2-5 哲学思考](./20210110-imooc-python3-ml)
-
   - [第三章]
     - [3-1 Jupyter Notebook、3-2 魔法命令 %run, %time、3-3 numpy.array](./20210110-imooc-python-ml-chapter-3)
     - [3-4 其他创建 numpy.array 的方法](./20210113-imooc-3-4-numpy-array)
@@ -28,10 +27,12 @@
     - [3-6 numpy 数组的合并与分割：concatenate (vstack/hstack)、split (vsplit/hsplit)](./20210113-imooc-ml-3-6-numpy)
     - [3-7 numpy.array 中的运算: Universal Function](./20210113-imooc-ml-3-7-numpy)
     - [3-8 Numpy 中的聚合操作：min、max](./20210113-imooc-ml-3-8)
-    - [ 3-9 numpy 中的 arg 运算：索引](./20210113-imooc-ml-3-9)
+    - [3-9 numpy 中的 arg 运算：索引](./20210113-imooc-ml-3-9)
     - [3-10 numpy中的比较运算和 Fancy Indexing](./20210113-imooc-ml-3-10)
     - [3-11 matplotlib 数据可视化基础](./20210113-imooc-ml-3-11)
     - [3-12 数据加载和简单的数据探索：Iris Plants dataset](./20210113-imooc-ml-3-12)
+  - [第四章]
+    - [4-1 K 近邻算法基础](./20210113-imooc-ml-4-1-knn)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
