@@ -22,6 +22,9 @@
     - [3-4 其他创建 numpy.array 的方法](./20210113-imooc-3-4-numpy-array)
     - [ 3-5 Numpy.array 的基本操作：切片、reshape](./20210113-imooc-ml-3-5-numpy)
     - [3-6 numpy 数组的合并与分割：concatenate (vstack/hstack)、split (vsplit/hsplit)](./20210113-imooc-ml-3-6-numpy)
+    - [3-7 numpy.array 中的运算: Universal Function](./20210113-imooc-ml-3-7-numpy)
+    - [3-8 Numpy 中的聚合操作：min、max](./20210113-imooc-ml-3-8)
+    - [ 3-9 numpy 中的 arg 运算：索引](./20210113-imooc-ml-3-9)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
