@@ -184,12 +184,7 @@ import numpy
 numpy.__version__
 ```
 
-
-
-
-    '1.19.2'
-
-
+'1.19.2'
 
 
 ```python
@@ -201,12 +196,7 @@ import numpy as np
 np.__version__
 ```
 
-
-
-
-    '1.19.2'
-
-
+'1.19.2'
 
 ### Python List 的特点
 
@@ -262,41 +252,21 @@ arr = array.array('i', [i for i in range(10)])
 arr
 ```
 
-
-
-
-    array('i', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
+array('i', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 ```python
 arr[5]
 ```
 
-
-
-
-    5
-
-
+5
 
 
 ```python
 arr[5] = 100
 ```
 
-
-```python
-arr
-```
-
-
-
-
-    array('i', [0, 1, 2, 3, 4, 100, 6, 7, 8, 9])
-
-
+array('i', [0, 1, 2, 3, 4, 100, 6, 7, 8, 9])
 
 
 ```python
@@ -311,8 +281,7 @@ arr[5] = "Machine Learning"  # 报错 TypeError: an integer is required (got typ
     <ipython-input-25-618ae4a54130> in <module>
     ----> 1 arr[5] = "Machine Learning"  # 报错 TypeError: an integer is required (got type str)
 
-
-    TypeError: an integer is required (got type str)
+TypeError: an integer is required (got type str)
 
 
 array 也不方便。numpy.array 应运而生。
@@ -323,24 +292,14 @@ nparr = np.array([i for i in range(10)])
 nparr
 ```
 
-
-
-
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 ```python
 nparr[5]
 ```
 
-
-
-
-    5
-
-
+5
 
 
 ```python
@@ -348,12 +307,7 @@ nparr[5] = 100
 nparr
 ```
 
-
-
-
-    array([  0,   1,   2,   3,   4, 100,   6,   7,   8,   9])
-
-
+array([  0,   1,   2,   3,   4, 100,   6,   7,   8,   9])
 
 
 ```python
@@ -368,21 +322,13 @@ nparr[5] = "Machine Learning" # invalid literal for int() with base 10: 'Machine
     <ipython-input-24-3538820512ea> in <module>
     ----> 1 nparr[5] = "Machine Learning"
 
-
-    ValueError: invalid literal for int() with base 10: 'Machine Learning'
-
-
+ValueError: invalid literal for int() with base 10: 'Machine Learning'
 
 ```python
 nparr.dtype
 ```
 
-
-
-
-    dtype('int64')
-
-
+dtype('int64')
 
 
 ```python
@@ -390,24 +336,14 @@ nparr[5] = 5.0
 nparr
 ```
 
-
-
-
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 ```python
 nparr.dtype
 ```
 
-
-
-
-    dtype('int64')
-
-
+dtype('int64')
 
 
 ```python
@@ -415,24 +351,14 @@ nparr[3] = 3.14 # 浮点数自动截位
 nparr
 ```
 
-
-
-
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 ```python
 nparr.dtype
 ```
 
-
-
-
-    dtype('int64')
-
-
+dtype('int64')
 
 
 ```python
@@ -444,10 +370,7 @@ nparr2 = np.array([1, 2, 3.0])
 nparr2.dtype
 ```
 
-
-
-
-    dtype('float64')
+dtype('float64')
 
 
 
