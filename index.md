@@ -10,13 +10,15 @@
 
 📚 [2021.01.12 #SENet# Squeeze-and-Excitation Networks](./posts/20210112-SENet)
 
+- [2021.01.13 #SENet# 6. ABLATION STUDY 、7 ROLE OF SE BLOCKS、8 CONCLUSION](./posts/20210113-SENet-2)
+
 📚 [2020.12.15 #NIN# Network In Network](./posts/20201215-network-in-network)
 
 📚 [2020.12.08 #Xception# Xception: Deep Learning with Depthwise Separable Convolutions](./posts/20201208-Xception)
 
-📚 [2020.12.06 #NuevoMatch# 数据包分类的一些补充](./posts/2020-12-06-supplement-for-Packet-Classification)
-
 📚 [2020.12.03 #*NuevoMatch*# A Computational Approach to Packet Classification](./posts/2020-12-03-Paper-for-computer-network)
+
+- [2020.12.06 #NuevoMatch# 数据包分类的一些补充](./posts/2020-12-06-supplement-for-Packet-Classification)
 
 📚 [2020.11.24 #深度学习综述# Deep Learning Review](./posts/20201124-DeepLearning-Review)
 
