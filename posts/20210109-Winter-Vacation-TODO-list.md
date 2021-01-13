@@ -21,6 +21,7 @@
   - [第三章：3-1 Jupyter Notebook、3-2 魔法命令 %run, %time、3-3 numpy.array](./20210110-imooc-python-ml-chapter-3)
     - [3-4 其他创建 numpy.array 的方法](./20210113-imooc-3-4-numpy-array)
     - [ 3-5 Numpy.array 的基本操作：切片、reshape](./20210113-imooc-ml-3-5-numpy)
+    - [3-6 numpy 数组的合并与分割：concatenate (vstack/hstack)、split (vsplit/hsplit)](./20210113-imooc-ml-3-6-numpy)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
