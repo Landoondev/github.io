@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+theme: rouge-github
 markdown: kramdown
 show_downloads: true
 title:            "Landon"
