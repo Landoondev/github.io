@@ -36,7 +36,9 @@
     - [4-2 scikit-learn 中机器学习算法封装：封装自己的 kNN 算法](./20210114-imooc-ml-4-2)
     - [4-3 划分训练数据集、测试数据集：编写自己的 train_test_split](./20210114-imooc-ml-4-3)
     - [4-4 分类准确度：封装自己的 accuracy_score 和 score](./20210114-imooc-4-4)
-    - [4-5 kNN 中的超参数：k、weight、p](./20210114-imocc-ml-4-5)
+    - [4-5 kNN 中的超参数：k、weights、p](./20210114-imocc-ml-4-5)
+    - [4-6 网格搜索与 k 近邻算法中的更多超参数：Grid Search](./20210114-imocc-ml-4-6)
+    - [4-7 数据归一化：Normalization、Standardization](./20210114-imooc-ml-4-7)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
