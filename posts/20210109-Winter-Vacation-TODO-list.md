@@ -53,7 +53,8 @@
     - [5-9 使用 sklearn 解决回归问题：LinearRegression、KNeighborsRegressor](./20210115-imooc-ml-5-9)
     - [5-10 更多关于线性回归的问题](./20210115-imooc-ml-5-10)
   - [第五章]：梯度下降 Gradient Descent
-    - [6-1 ]
+    - [6-1 梯度下降 Gradient Descent](./20210115-imooc-ml-6-1)
+    - [6-2 梯度下降法模拟](./20210115-imooc-ml-6-2)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
