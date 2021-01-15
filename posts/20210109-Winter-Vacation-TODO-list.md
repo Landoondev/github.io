@@ -20,7 +20,7 @@
 
   - [第一、二章]
     - [1-1 什么是机器学习、1-2 课程涵盖内容和理念、1-3 技术栈、2-1 机器学习世界的数据、2-2 机器学习的主要啊任务 2-3 监督、非监督、半监督、强化学习、2-4 批量学习、在线学习、参数、非参数学习、2-5 哲学思考](./20210110-imooc-python3-ml)
-  - [第三章]
+  - [第三章]：Numpy
     - [3-1 Jupyter Notebook、3-2 魔法命令 %run, %time、3-3 numpy.array](./20210110-imooc-python-ml-chapter-3)
     - [3-4 其他创建 numpy.array 的方法](./20210113-imooc-3-4-numpy-array)
     - [ 3-5 Numpy.array 的基本操作：切片、reshape](./20210113-imooc-ml-3-5-numpy)
@@ -31,7 +31,7 @@
     - [3-10 numpy中的比较运算和 Fancy Indexing](./20210113-imooc-ml-3-10)
     - [3-11 matplotlib 数据可视化基础](./20210113-imooc-ml-3-11)
     - [3-12 数据加载和简单的数据探索：Iris Plants dataset](./20210113-imooc-ml-3-12)
-  - [第四章]
+  - [第四章]：kNN
     - [4-1 K 近邻算法基础](./20210113-imooc-ml-4-1-knn)
     - [4-2 scikit-learn 中机器学习算法封装：封装自己的 kNN 算法](./20210114-imooc-ml-4-2)
     - [4-3 划分训练数据集、测试数据集：编写自己的 train_test_split](./20210114-imooc-ml-4-3)
@@ -41,6 +41,10 @@
     - [4-7 数据归一化：Normalization、Standardization](./20210114-imooc-ml-4-7)
     - [4-8 sklearn 中的 Scaler：StandardScaler](./20210114-imooc-ml-4-8)
     - [4-9 更多有关 K 近邻算法的思考](./20210114-imooc-ml-4-9)
+  - [第四章]：Linear Regression
+    - [5-1 简单线性回归](./20210115-imooc-ml-5-1)
+    - [5-2 最小二乘法推导](./20210115-imooc-ml-5-2)
+    - [5-3 实现 Simple Linear Regression](./20210115-imooc-ml-5-3)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
