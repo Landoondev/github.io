@@ -476,6 +476,7 @@ a {
 }
 
 a:hover {
+    color: #179957;
     text-decoration: underline
 }
 
