@@ -47,7 +47,7 @@
     - [4-7 数据归一化：Normalization、Standardization](./20210114-imooc-ml-4-7)
     - [4-8 sklearn 中的 Scaler：StandardScaler](./20210114-imooc-ml-4-8)
     - [4-9 更多有关 K 近邻算法的思考](./20210114-imooc-ml-4-9)
-  - ✅ [第四章]：Linear Regression
+  - ✅ [第五章]：Linear Regression
     - [5-1 简单线性回归](./20210115-imooc-ml-5-1)
     - [5-2 最小二乘法推导](./20210115-imooc-ml-5-2)
     - [5-3 实现 Simple Linear Regression](./20210115-imooc-ml-5-3)
@@ -58,7 +58,7 @@
     - [5-8 实现多元线性回归（正规方程解）](./20210115-imooc-ml-5-8)
     - [5-9 使用 sklearn 解决回归问题：LinearRegression、KNeighborsRegressor](./20210115-imooc-ml-5-9)
     - [5-10 更多关于线性回归的问题](./20210115-imooc-ml-5-10)
-  - 💢 [第五章]：梯度下降 Gradient Descent
+  - ✅ [第六章]：梯度下降 Gradient Descent
     - [6-1 梯度下降 Gradient Descent](./20210115-imooc-ml-6-1)
     - [6-2 梯度下降法模拟](./20210115-imooc-ml-6-2)
     - [6-3 多元线性回归中的梯度下降法推导](./20210115-imooc-ml-6-3)
@@ -66,6 +66,9 @@
     - [6-5 梯度下降的向量化和数据标准化](./20210115-imooc-ml-6-5)
     - [6-6 随机梯度下降法](./20210115-imooc-ml-6-6)
     - [6-7 封装我们的 SGD、sklearn 中的随机梯度下降](./20210115-imooc-ml-6-7)
+    - [6-8 如何确定梯度计算的准确性：调试梯度下降法](./20210115-imooc-ml-6-8)
+    - [6-9 有关梯度下降的更多深入讨论](./20210115-imooc-ml-6-9)
+  - 💢 [第七章]：主成分分析（Principal Component Analysis）
 
 看一遍视频课程，并且做好相应的课程笔记。
 
