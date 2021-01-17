@@ -30,9 +30,11 @@
 
 ---
 
-## II 论文复现
+## II 论文复现相关
 
 > 看完一些论文后跑的代码✅
+
+👨‍💻 [训练神经网络的技巧：Saving and Loading checkpoint](./posts/20210117-Pytorch-saving-and-loading-checkpoint)
 
 👨‍💻 [2020.12.12 #Xception# 复现 Xception 的完整代码 Notebook](./posts/20201212-Using-PyTorch-to-achieve-ACC-of-87-percent-of-Xception-on-CIFAR-10)
 
