@@ -6,6 +6,8 @@
 
 -  [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
+- [2021.01.19 #ResNet18# ResNet18 Model](./20210119-implement-resnet)
+
 - [2021.01.17 #组会# 课题组组会](./posts/20210117-group-meeting)
 
 - [2021.01.17 训练神经网络的技巧：Saving and Loading checkpoint](./posts/20210117-Pytorch-saving-and-loading-checkpoint)

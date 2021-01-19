@@ -1,3 +1,16 @@
+## 2021.01.19
+
+AlexNet 把 feature map 分给 2 块 GPU 分别进行训练，分组卷积（Group Convolution）的最早出现。我的疑问是：输入的图片（特征图）为 $224 \times 224 \times 3$，3 个通道，怎么分呢？是一块 GPU 处理两片特征图，另一块处理 1 片吗？
+
+![](./20201024/1.png)
+
+> The kernels of the second, fourth, and fifth convolutional layers are connected only to those kernel maps in the previous layer which reside on the same GPU.
+
+我还找不到那个使用 3 块 GPU 的 model 源码。
+
+
+
+---
 
 # 1 -论文阅读
 
