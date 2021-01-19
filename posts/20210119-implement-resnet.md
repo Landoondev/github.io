@@ -19,7 +19,8 @@ import torch.nn.functional as F
 
 
 class BasicBlock(nn.Module):
-    expansion = 1
+    expansion = 1 # class Bottleneck(nn.Module) 中的 expansion = 4，
+    							# 即一个 Block 中通道数会改变，如上图 50-layer，通道数增大 4 倍
 
     def __init__(self, in_planes, planes, stride=1):
         super(BasicBlock, self).__init__()
