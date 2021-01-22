@@ -34,6 +34,8 @@
 
 > 看完一些论文后跑的代码✅
 
+👨‍💻 [2021.01.22 #SENet50# ResNet50、SENet50 和 SKNet50](./posts/20210122-SENet-SKNet)
+
 👨‍💻 [2021.01.19 #ResNet18# ResNet18 Model](./posts/20210119-implement-resnet)
 
 👨‍💻 [2021.01.17 训练神经网络的技巧：Saving and Loading checkpoint](./posts/20210117-Pytorch-saving-and-loading-checkpoint)

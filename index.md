@@ -6,6 +6,8 @@
 
 -  [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
+- [2021.01.22 #SENet50# ResNet50、SENet50 和 SKNet50](./posts/20210122-SENet-SKNet)
+
 - [2021.01.19 #ResNet18# ResNet18 Model](./posts/20210119-implement-resnet)
 
 - [2021.01.17 #组会# 课题组组会](./posts/20210117-group-meeting)
