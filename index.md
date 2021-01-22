@@ -14,3 +14,4 @@
 
 - [2021.01.17 训练神经网络的技巧：Saving and Loading checkpoint](./posts/20210117-Pytorch-saving-and-loading-checkpoint)
 
+update
