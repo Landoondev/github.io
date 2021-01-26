@@ -1,5 +1,13 @@
 # 安装指定版本的 Python
 
+```powershell
+conda create -n your_env_name python=X.X（2.7、3.6等）
+
+conda install -n your_env_name [package]
+```
+
+
+
 在我的电脑上，系统的 Python 版本为 3.5.6：
 
 ![](./20210126/21.png)
@@ -49,7 +57,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
 接下来把 `~/.zshrc` 中的一行代码注释掉：
 
 ```shell
-# export PATH="/Users/landonglei/anaconda3/bin:$PATH"
+# export PATH="/Users/landon/anaconda3/bin:$PATH"
 ```
 
 Python 3.8 出现了：
