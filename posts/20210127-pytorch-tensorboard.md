@@ -2,6 +2,10 @@
 
 手动保存 checkpoint，再编写脚本读取，最后使用 matplotlib.pyplot 进行绘制。这样效率不高，今天尝试一些 TensorBoard。
 
+使用 tensorboard 可视化 model 结果截图（远程 Windows 正常运行）：
+
+![](./20210127/7.png)
+
 ## 安装 tensorboard
 
 ✅
