@@ -1,6 +1,32 @@
 # 使用 TensorBoard 可视化 model
 
+> - 官方文档：[https://pytorch.org/docs/stable/tensorboard.html](<https://pytorch.org/docs/stable/tensorboard.html>)
+> - 
+
 手动保存 checkpoint，再编写脚本读取，最后使用 matplotlib.pyplot 进行绘制。这样效率不高，今天尝试一些 TensorBoard。
+
+## 结果
+
+测试程序：
+
+```python
+import torch
+import torchvision
+from torch.utils.tensorboard import SummaryWriter
+from torchvision import datasets, transforms
+
+writer = SummaryWriter()
+
+model = torchvision.models.vgg11()
+dummy_input = torch.rand(2, 3, 256, 256)  # 假设输入2张3*256*256的图片
+writer.add_graph(model, dummy_input)
+```
+
+```
+(ldl-env) ➜ tensorboard --logdir=runs
+```
+
+
 
 使用 tensorboard 可视化 model 结果截图（远程 Windows 正常运行）：
 
