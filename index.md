@@ -6,6 +6,8 @@
 
 - [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
+- [2021.01.27 解析卷积神经网络——深度学习实践手册](./posts/202101227-cnn-Xiushen-Wei)
+
 - [2021.01.26 #Python# 安装指定版本的 Python](./posts/20210126-Install-the-specified-version-of-Python)
 
 - [2021.01.24 #组会# 课题组组会](./posts/20210124-group-meeting)
@@ -17,3 +19,4 @@
 - [2021.01.17 #组会# 课题组组会](./posts/20210117-group-meeting)
 
 - [2021.01.17 训练神经网络的技巧：Saving and Loading checkpoint](./posts/20210117-Pytorch-saving-and-loading-checkpoint)
+

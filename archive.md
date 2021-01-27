@@ -8,6 +8,8 @@
 
 > 我的论文阅读清单✅
 
+📚 [2021.01.27 解析卷积神经网络——深度学习实践手册](./posts/202101227-cnn-Xiushen-Wei)
+
 📚 [2021.01.12 #SENet# Squeeze-and-Excitation Networks](./posts/20210112-SENet)
 
 - [2021.01.13 #SENet# 6. ABLATION STUDY 、7 ROLE OF SE BLOCKS、8 CONCLUSION](./posts/20210113-SENet-2)
