@@ -54,6 +54,8 @@
 
 > 瞎搞搞，不成体系，难成气候。
 
+🔧 [2021.01.27 #tensorboard# 使用 TensorBoard 可视化 model](./posts/20210127-pytorch-tensorboard)
+
 🔧 [2021.01.26 #Python# 安装指定版本的 Python](./posts/20210126-Install-the-specified-version-of-Python)
 
 👨‍💻 [2020.12.30 #code# 十大经典的排序算法——C++ 实现](./posts/20201230-Ten-classic-sorting-algorithms)
