@@ -6,7 +6,7 @@
 
 - [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
-- [2021.01.27 解析卷积神经网络——深度学习实践手册](./posts/202101227-cnn-Xiushen-Wei)
+- [2021.01.27 我觉得这是一篇优秀的深度学习-卷积神经网络中文综述](./posts/202101227-cnn-Xiushen-Wei)
 
 - [2021.01.26 #Python# 安装指定版本的 Python](./posts/20210126-Install-the-specified-version-of-Python)
 
