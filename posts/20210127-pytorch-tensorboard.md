@@ -70,8 +70,7 @@ writer = SummaryWriter()
 
 model = torchvision.models.vgg11()
 dummy_input = torch.rand(2, 3, 256, 256)  # 假设输入2张3*256*256的图片
-with SummaryWriter(comment='VGG11') as w:
-    w.add_graph(model, (dummy_input,))
+writer.add_graph(model, dummy_input)
 ```
 
 ```
