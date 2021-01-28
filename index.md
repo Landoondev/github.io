@@ -7,6 +7,8 @@
 
 - [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
+- [2021.01.28 和看小说一样流畅的深度学习基础图书](./posts/20210128-Deep-Learning-from-Scrach)
+
 
 -  [2021.01.27 #tensorboard# 使用 TensorBoard 可视化 model](./posts/20210127-pytorch-tensorboard)
 
