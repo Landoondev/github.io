@@ -7,7 +7,7 @@
 
 ## 近期工作
 
-- [2021.01.29 使用 Python 编写了一个自动常见文件夹和笔记文件的脚本](./posts/20210129-auto-create-image-dir-and-note-file)
+- [2021.01.29 使用 Python 编写了一个自动创建文件夹和笔记文件的脚本](./posts/20210129-auto-create-image-dir-and-note-file)
 
 
 - [2021.01.28 和看小说一样流畅的深度学习基础图书](./posts/20210128-Deep-Learning-from-Scrach)
