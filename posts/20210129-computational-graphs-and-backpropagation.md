@@ -14,9 +14,13 @@
 
 ![](./20210129/3.png)
 
-- （3）Neural Networks, Computation, Graphs, CMSC,470: [http://www.cs.umd.edu/class/fall2018/cmsc470/slides/slides_8.pdf](<http://www.cs.umd.edu/class/fall2018/cmsc470/slides/slides_8.pdf>)
+- （3）(CS231n) Backpropagation: Intuitionschain rule interpretation, real-valued circuits, patterns in gradient flow: [https://cs231n.github.io/optimization-2/](<https://cs231n.github.io/optimization-2/>)
+
+![](./20210129/4.png)
 
 - （4）Computing Gradient Hung-yi Lee 李宏毅:  [http://speech.ee.ntu.edu.tw/~tlkagk/courses/MLDS_2018/Lecture/Graph.pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/MLDS_2018/Lecture/Graph.pdf)
 
-## 一些笔记
+- （5）CS231n: Convolutional Neural Networks for Visual Recognition [https://cs231n.github.io/](./<https://cs231n.github.io/>)
+
+
 
