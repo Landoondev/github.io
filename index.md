@@ -7,7 +7,7 @@
 
 ## 近期工作
 
-- [计算图和反向传播（Computational Graphs and Backpropagation）](./posts/20210129-computational-graphs-and-backpropagation)
+- [2021.01.29 计算图和反向传播（Computational Graphs and Backpropagation）](./posts/20210129-computational-graphs-and-backpropagation)
 
 - [2021.01.29 使用 Python 编写了一个自动创建文件夹和笔记文件的脚本](./posts/20210129-auto-create-image-dir-and-note-file)
 
