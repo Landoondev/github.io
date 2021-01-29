@@ -4,7 +4,7 @@
 
 - 全书下载地址：[https://github.com/LeoLiu8023AmyLu/Machine_Learning](<https://github.com/LeoLiu8023AmyLu/Machine_Learning>)
 
-- Hacker's guide to Neural Networks (Andrej Karpathy blog): [http://karpathy.github.io/neuralnets/](<http://karpathy.github.io/neuralnets/>)
+- 推荐阅读：Hacker's guide to Neural Networks (Andrej Karpathy blog): [http://karpathy.github.io/neuralnets/](<http://karpathy.github.io/neuralnets/>)
 
 ![](./20210128/1.png)
 
@@ -62,7 +62,7 @@
 
 - 感知机中使用了**阶跃函数**作为激活函数。如果感知机中将激活函数从阶跃函数换成其他函数，就可以进入神经网络的世界了。
 
-- Softmax 的溢出问题，
+- 解决 Softmax 的溢出问题：
 
 ![](./20210128/3.png)
 
@@ -158,7 +158,7 @@ Softmax 反向传播的推导。图 5-29 为前向传播和反向传播计算图
 
 **（7）Batch Normalization**
 
-Frederik Kratzert 的􏶸 􏶹“Understanding the backward pass through Batch Normalization Layer” 里有详细说明。
+Frederik Kratzert 的􏶸博客 “Understanding the backward pass through Batch Normalization Layer” 里有详细说明。
 
 ![](./20210128/17.png)
 

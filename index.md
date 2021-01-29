@@ -1,14 +1,16 @@
 <h1 align='center'> Home Page </h1>
 
-## 近期工作
-
 - [2021.01.09 ~ 2021.02.27 # 寒假 TODO LIST](./posts/20210109-Winter-Vacation-TODO-list)
 
 
 - [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
-- [2021.01.28 和看小说一样流畅的深度学习基础图书](./posts/20210128-Deep-Learning-from-Scrach)
+## 近期工作
 
+- [2021.01.29 使用 Python 编写了一个自动常见文件夹和笔记文件的脚本](./posts/20210129-auto-create-image-dir-and-note-file)
+
+
+- [2021.01.28 和看小说一样流畅的深度学习基础图书](./posts/20210128-Deep-Learning-from-Scrach)
 
 -  [2021.01.27 #tensorboard# 使用 TensorBoard 可视化 model](./posts/20210127-pytorch-tensorboard)
 
