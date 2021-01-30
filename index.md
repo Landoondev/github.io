@@ -7,17 +7,19 @@
 
 ## 近期工作
 
+- [📚 2021.01.30 #论文阅读#PyTorch: An Imperative Style, High-Performance Deep Learning Library](./posts/20210130-pytorch-paper-reading-1)
+
 - [2021.01.29 计算图和反向传播（Computational Graphs and Backpropagation）](./posts/20210129-computational-graphs-and-backpropagation)
 
 - [2021.01.29 使用 Python 编写了一个自动创建文件夹和笔记文件的脚本](./posts/20210129-auto-create-image-dir-and-note-file)
 
 
-- [2021.01.28 和看小说一样流畅的深度学习基础图书](./posts/20210128-Deep-Learning-from-Scrach)
+- [📚 2021.01.28 和看小说一样流畅的深度学习基础图书](./posts/20210128-Deep-Learning-from-Scrach)
 
 -  [2021.01.27 #tensorboard# 使用 TensorBoard 可视化 model](./posts/20210127-pytorch-tensorboard)
 
 
-- [2021.01.27 #笔记# 我觉得这是一篇优秀的深度学习-卷积神经网络中文综述](./posts/202101227-cnn-Xiushen-Wei)
+- [📚 2021.01.27 #笔记# 我觉得这是一篇优秀的深度学习-卷积神经网络中文综述](./posts/202101227-cnn-Xiushen-Wei)
 
 
 - [2021.01.26 #Python# 安装指定版本的 Python](./posts/20210126-Install-the-specified-version-of-Python)
