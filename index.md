@@ -7,6 +7,8 @@
 
 ## 近期工作
 
+- [2021.02.01 课题组组会](./posts/20210201-group-meeting)
+
 - [📚 2021.01.30 #论文阅读#PyTorch: An Imperative Style, High-Performance Deep Learning Library](./posts/20210130-pytorch-paper-reading-1)
 
 - [2021.01.29 计算图和反向传播（Computational Graphs and Backpropagation）](./posts/20210129-computational-graphs-and-backpropagation)
