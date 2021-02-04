@@ -7,7 +7,9 @@
 
 ## 近期工作
 
-- [2021.02.01 课题组组会](./posts/20210201-group-meeting)
+- [2021.02.04 #AlexNet# AlexNet 的一些细节及拓展学习](./posts/20210204-AlexNet-some-details)
+
+- [2021.02.01 #组会# 课题组组会](./posts/20210201-group-meeting)
 
 - [📚 2021.01.30 #论文阅读#PyTorch: An Imperative Style, High-Performance Deep Learning Library](./posts/20210130-pytorch-paper-reading-1)
 
