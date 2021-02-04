@@ -20,7 +20,7 @@
 
 后来的可分离卷积（分组卷积）的思想。
 
-如下是我是单 GPU 中 AlexNet 结构图，图片来源：<https://neurohive.io/en/popular-networks/alexnet-imagenet-classification-with-deep-convolutional-neural-networks/>
+如下是我在网络上收集到单 GPU 中 AlexNet 结构图，图片来源：<https://neurohive.io/en/popular-networks/alexnet-imagenet-classification-with-deep-convolutional-neural-networks/>
 
 ![](./20210204/AlexNet-1.png)
 
