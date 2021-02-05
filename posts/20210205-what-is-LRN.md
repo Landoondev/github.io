@@ -61,6 +61,19 @@ class AlexNet(nn.Module):
             nn.ReLU(),
             nn.Linear(in_features=4096, out_features=num_classes),
         )
+        
+    def forward(self, x):
+    """
+    Pass the input through the net.
+    Args:
+        x (Tensor): input tensor
+    Returns:
+        output (Tensor): output tensor
+    """
+    x = self.net(x)
+    x = x.view(-1, 256 * 6 * 6)  # reduce the dimensions for linear layer input
+    return self.classifier(x)
+
 ```
 
 需要注意的是，**LRN 发生在 ReLU 激活函数之后。**
