@@ -7,6 +7,8 @@
 
 ## 近期工作
 
+- [2021.02.05 #AlexNet# AlexNet 中的 LRN（Local Response Normalization） 是什么](./posts/20210205-what-is-LRN)
+
 - [2021.02.04 #AlexNet# AlexNet 的一些细节及拓展学习](./posts/20210204-AlexNet-some-details)
 
 - [2021.02.01 #组会# 课题组组会](./posts/20210201-group-meeting)
