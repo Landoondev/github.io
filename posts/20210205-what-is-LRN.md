@@ -3,6 +3,7 @@
 对我而言，LRN 是 AleNet 论文中的一个难点，今天就来更加细致的理解一下。
 
 - LRN 操作在哪一步？
+  - 答：ReLU 之后。
 
 ## AlexNet 的 PyTorch 官方实现
 
