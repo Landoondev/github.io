@@ -101,7 +101,13 @@
 
 参数：
 
-- 使用两块 GPU 总参数：34944 + 307456 + 885120 + 663936 + 442624 + 37752832 + 4097000 = 44183912 个。
+- 使用两块 GPU 总参数：34944 + 307456 + 885120 + 663936 + 442624 + 37752832 + 16781312 + 4097000 = 60965224 个。
+
+  - > 与论文中的描述一致。
+    >
+    > The neural network, which has **60 million parameters** and 650,000 neurons, consists
+    > of five convolutional layers, some of which are followed by max-pooling layers,
+    > and three fully-connected layers with a final 1000-way softmax.
 
 - 如果使用单块 GPU，则参数个数为 ≈ 1.38 亿个参数。
 

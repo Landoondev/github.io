@@ -63,16 +63,16 @@ class AlexNet(nn.Module):
         )
         
     def forward(self, x):
-    """
-    Pass the input through the net.
-    Args:
-        x (Tensor): input tensor
-    Returns:
-        output (Tensor): output tensor
-    """
-    x = self.net(x)
-    x = x.view(-1, 256 * 6 * 6)  # reduce the dimensions for linear layer input
-    return self.classifier(x)
+        """
+        Pass the input through the net.
+        Args:
+            x (Tensor): input tensor
+        Returns:
+            output (Tensor): output tensor
+        """
+        x = self.net(x)
+        x = x.view(-1, 256 * 6 * 6)  # reduce the dimensions for linear layer input
+        return self.classifier(x)
 
 ```
 
@@ -305,7 +305,10 @@ $$b_{c} = a_{c}\left(k + \frac{\alpha}{n}
 $$\frac{-0.7747}{(2 + \frac{0.0001}{5} (0.7747^2 + 0.4657^2 + 0.3479^2))^{0.75}} = -0.4607$$
 
 - 跨通道求和的下限：max(0, 0 - 5/2) = 0
-- 上限：min(2, 0 + 5/2) = 2
+
+- ## 上限：min(2, 0 + 5/2) = 2
+
+![](./20210205/5.png)
 
 ---
 
