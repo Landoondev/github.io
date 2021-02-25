@@ -120,6 +120,15 @@
     - [9-6 在逻辑回归中使用多项式特征](./20210224-imooc-python3-ml-9-6)
     - [9-7 scikit-learn 中的逻辑回归](./20210224-imooc-python3-ml-9-7)
     - [9-8 OvR 与 OvO](./20210224-imooc-python3-ml-9-8)
+  - [第十章] 
+    - [10-1 准确度的陷阱和混淆矩阵](./20210225-imooc-python3-ml-10-1)
+    - [10-2 精确率和召回率](./20210225-imooc-python3-ml-10-2)
+    - [10-3 实现混淆矩阵、精准率和查全率 ](./20210225-imooc-python3-ml-10-3)
+    - [10-4 F1 Score](./20210225-imooc-python3-ml-10-4)
+    - [10-5 Precision-Recall 的平衡](./20210225-imooc-python3-ml-10-5)
+    - [10-6 Precision-Recall 曲线](./20210225-imooc-python3-ml-10-6)
+    - [10-7 ROC 曲线](./20210225-imooc-python3-ml-10-7)
+    - [10-8 多分类问题中的混淆矩阵](./20210225-imooc-python3-ml-10-8)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
