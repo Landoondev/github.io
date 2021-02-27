@@ -129,6 +129,16 @@
     - [10-6 Precision-Recall 曲线](./20210225-imooc-python3-ml-10-6)
     - [10-7 ROC 曲线](./20210225-imooc-python3-ml-10-7)
     - [10-8 多分类问题中的混淆矩阵](./20210225-imooc-python3-ml-10-8)
+  - [第十一章] SVM
+    - [11-1 什么是支持向量机 SVM？](./20210226-imooc-python3-ml-11-1)
+    - [11-2 SVM 的数学表达式推导（Hard Margin）](./20210226-imooc-python3-ml-11-2)
+    - [11-3 Soft Margin 和 SVM 的正则化](./20210226-imooc-python3-ml-11-3)
+    - [11-4 sklearn 中的 SVM 算法](./20210227-imooc-python3-ml-11-4)
+    - [11-5 SVM 中使用多项式特征](./20210227-imooc-python3-ml-11-5)
+    - [11-6 什么是核函数？](./20210227-imooc-python3-ml-11-6)
+    - [11-7 高斯核函数](./20210227-imooc-python3-ml-11-7)
+    - [11-8 sklearn 中的 RBF 核](./20210227-imooc-python3-ml-11-8)
+    - [11-9 SVM 解决回归问题](./20210227-imooc-python3-ml-11-9)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
