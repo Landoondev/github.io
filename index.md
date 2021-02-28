@@ -7,7 +7,7 @@
 
 ## 近期工作
 
-- [2021.02.28 #组会# 课题组组会](./20210228-group-meeting)
+- [2021.02.28 #组会# 课题组组会](./posts/20210228-group-meeting)
 
 - [2021.02.05 #AlexNet# AlexNet 中的 LRN（Local Response Normalization） 是什么](./posts/20210205-what-is-LRN)
 
