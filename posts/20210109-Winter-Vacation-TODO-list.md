@@ -15,6 +15,8 @@
 
 ## 机器学习与深度学习
 
+- [Python3入门机器学习 经典算法与应用](./20210228-imooc-python3-ml-course)
+
 - **吴恩达**的深度学习课程 ⚠️【看到了语义分割部分】
 
   - （1）问题一：逻辑回归究竟在拟合些什么东西？
@@ -37,125 +39,6 @@
 
 看一遍视频课程，并且做好笔记。一定要做笔记。
 
-- ✅ 慕课网**刘宇波**老师的「Python3 入门机器学习」 🎉🎉🎉
-
-  - ✅ [第一、二章]：[概述](./20210110-imooc-python3-ml)
-    - [1-1 什么是机器学习]
-    - [1-2 课程涵盖内容和理念]
-    - [1-3 技术栈]
-    - [2-1 机器学习世界的数据]
-    - [2-2 机器学习的主要任务]
-    - [2-3 监督、非监督、半监督、强化学习]
-    - [2-4 批量学习、在线学习、参数、非参数学习]
-    - [2-5 哲学思考]
-  - ✅ [第三章]：Numpy
-    - [3-1 Jupyter Notebook、3-2 魔法命令 %run, %time、3-3 numpy.array](./20210110-imooc-python-ml-chapter-3)
-    - [3-4 其他创建 numpy.array 的方法](./20210113-imooc-3-4-numpy-array)
-    - [ 3-5 Numpy.array 的基本操作：切片、reshape](./20210113-imooc-ml-3-5-numpy)
-    - [3-6 numpy 数组的合并与分割：concatenate (vstack/hstack)、split (vsplit/hsplit)](./20210113-imooc-ml-3-6-numpy)
-    - [3-7 numpy.array 中的运算: Universal Function](./20210113-imooc-ml-3-7-numpy)
-    - [3-8 Numpy 中的聚合操作：min、max](./20210113-imooc-ml-3-8)
-    - [3-9 numpy 中的 arg 运算：索引](./20210113-imooc-ml-3-9)
-    - [3-10 numpy中的比较运算和 Fancy Indexing](./20210113-imooc-ml-3-10)
-    - [3-11 matplotlib 数据可视化基础](./20210113-imooc-ml-3-11)
-    - [3-12 数据加载和简单的数据探索：Iris Plants dataset](./20210113-imooc-ml-3-12)
-  - ✅ [第四章]：kNN
-    - [4-1 K 近邻算法基础](./20210113-imooc-ml-4-1-knn)
-    - [4-2 scikit-learn 中机器学习算法封装：封装自己的 kNN 算法](./20210114-imooc-ml-4-2)
-    - [4-3 划分训练数据集、测试数据集：编写自己的 train_test_split](./20210114-imooc-ml-4-3)
-    - [4-4 分类准确度：封装自己的 accuracy_score 和 score](./20210114-imooc-4-4)
-    - [4-5 kNN 中的超参数：k、weights、p](./20210114-imocc-ml-4-5)
-    - [4-6 网格搜索与 k 近邻算法中的更多超参数：Grid Search](./20210114-imocc-ml-4-6)
-    - [4-7 数据归一化：Normalization、Standardization](./20210114-imooc-ml-4-7)
-    - [4-8 sklearn 中的 Scaler：StandardScaler](./20210114-imooc-ml-4-8)
-    - [4-9 更多有关 K 近邻算法的思考](./20210114-imooc-ml-4-9)
-  - ✅ [第五章]：Linear Regression
-    - [5-1 简单线性回归](./20210115-imooc-ml-5-1)
-    - [5-2 最小二乘法推导](./20210115-imooc-ml-5-2)
-    - [5-3 实现 Simple Linear Regression](./20210115-imooc-ml-5-3)
-    - [5-4 向量化加速](./20210115-imooc-ml-5-4)
-    - [5-5 衡量线性回归算法的指标 MSE、RMSE、MAE](./20210115-imooc-ml-5-5)
-    - [5-6 最好的衡量线性回归算法的指标 R Squared](./20210115-imooc-ml-5-6)
-    - [5-7 多元线性回归和正规方程解（解析解）](./20210115-imooc-ml-5-7)
-    - [5-8 实现多元线性回归（正规方程解）](./20210115-imooc-ml-5-8)
-    - [5-9 使用 sklearn 解决回归问题：LinearRegression、KNeighborsRegressor](./20210115-imooc-ml-5-9)
-    - [5-10 更多关于线性回归的问题](./20210115-imooc-ml-5-10)
-  - ✅ [第六章]：梯度下降 Gradient Descent
-    - [6-1 梯度下降 Gradient Descent](./20210115-imooc-ml-6-1)
-    - [6-2 梯度下降法模拟](./20210115-imooc-ml-6-2)
-    - [6-3 多元线性回归中的梯度下降法推导](./20210115-imooc-ml-6-3)
-    - [6-4 在线性回归模型中使用梯度下降法](./20210115-imooc-ml-6-4)
-    - [6-5 梯度下降的向量化和数据标准化](./20210115-imooc-ml-6-5)
-    - [6-6 随机梯度下降法](./20210115-imooc-ml-6-6)
-    - [6-7 封装我们的 SGD、sklearn 中的随机梯度下降](./20210115-imooc-ml-6-7)
-    - [6-8 如何确定梯度计算的准确性：调试梯度下降法](./20210115-imooc-ml-6-8)
-    - [6-9 有关梯度下降的更多深入讨论](./20210115-imooc-ml-6-9)
-  - ✅ [第七章]：主成分分析（Principal Component Analysis）
-    - [7-1 什么是 PCA](./20210115-imooc-ml-7-1)
-    - [7-2 梯度上升法求解 PCA 问题：向量化公式](./20210115-imooc-ml-7-2)
-    - [7-3 求解数据的主成分 PCA](./20210115-imooc-ml-7-3)
-    - [7-4 求数据的前 n 个主成分](./20210115-imooc-ml-7-4)
-    - [7-5 高维数据映射为低维数据](./20210125-imooc-ml-7-5)
-    - [7-6 scikit-learn 中的 PCA](./20210125-imooc-ml-7-6)
-    - [7-7 试手 MNIST 数据集](./20210125-imooc-ml-7-7)
-    - [7-8 使用 PCA 降噪](./20210125-imooc-ml-7-8)
-    - [7-9 人脸识别与特征脸](20210125-imooc-ml-7-9)
-  - ✅ [第八章] 多项式回归和机器学习中的一些重要概念
-    - [8-1 什么是多项式回归？](./20210126-imooc-ml-8-1)
-    - [8-2 scikit-learn 中的多项式回归与 pipeline ](./20210126-imooc-ml-8-2)
-    - [8-3 过拟合和欠拟合](./20210126-imooc-ml-8-3)
-    - [8-4 为什么需要训练数据集和测试数据集](./20210126-imooc-ml-8-4)
-    - [8-5 学习曲线](./20210126-imooc-ml-8-5)
-    - [8-6 验证数据集与交叉验证](./20210223-imooc-python3-ml)
-    - [8-7 偏差方差权衡](./20210223-imooc-python3-ml-8-7)
-    - [8-8 模型泛化与岭回归：L2 正则化](./20210223-imooc-python3-ml-8-8)
-    - [8-9 LASSO 回归：L1 正则化](./20210223-imooc-python3-ml-8-9)
-    - [8-10 L1，L2 和 弹性网络](./20210223-imooc-python3-ml-8-10)
-  - ✅ [第九章] 逻辑回归 Logistics Regression
-    - [9-1 什么是逻辑回归？](./20210224-imooc-python3-ml-9-1)
-    - [9-2 逻辑回归的损失函数](./20210224-imooc-python3-ml-9-2)
-    - [9-3 逻辑回归损失函数的梯度](./20210224-imooc-python3-ml-9-3)
-    - [9-4 实现逻辑回归](./20210224-imooc-python3-ml-9-4)
-    - [9-5 决策边界](./20210224-imooc-python3-ml-9-5)
-    - [9-6 在逻辑回归中使用多项式特征](./20210224-imooc-python3-ml-9-6)
-    - [9-7 scikit-learn 中的逻辑回归](./20210224-imooc-python3-ml-9-7)
-    - [9-8 OvR 与 OvO](./20210224-imooc-python3-ml-9-8)
-  - [第十章] 
-    - [10-1 准确度的陷阱和混淆矩阵](./20210225-imooc-python3-ml-10-1)
-    - [10-2 精确率和召回率](./20210225-imooc-python3-ml-10-2)
-    - [10-3 实现混淆矩阵、精准率和查全率 ](./20210225-imooc-python3-ml-10-3)
-    - [10-4 F1 Score](./20210225-imooc-python3-ml-10-4)
-    - [10-5 Precision-Recall 的平衡](./20210225-imooc-python3-ml-10-5)
-    - [10-6 Precision-Recall 曲线](./20210225-imooc-python3-ml-10-6)
-    - [10-7 ROC 曲线](./20210225-imooc-python3-ml-10-7)
-    - [10-8 多分类问题中的混淆矩阵](./20210225-imooc-python3-ml-10-8)
-  - [第十一章] SVM
-    - [11-1 什么是支持向量机 SVM？](./20210226-imooc-python3-ml-11-1)
-    - [11-2 SVM 的数学表达式推导（Hard Margin）](./20210226-imooc-python3-ml-11-2)
-    - [11-3 Soft Margin 和 SVM 的正则化](./20210226-imooc-python3-ml-11-3)
-    - [11-4 sklearn 中的 SVM 算法](./20210227-imooc-python3-ml-11-4)
-    - [11-5 SVM 中使用多项式特征](./20210227-imooc-python3-ml-11-5)
-    - [11-6 什么是核函数？](./20210227-imooc-python3-ml-11-6)
-    - [11-7 高斯核函数](./20210227-imooc-python3-ml-11-7)
-    - [11-8 sklearn 中的 RBF 核](./20210227-imooc-python3-ml-11-8)
-    - [11-9 SVM 解决回归问题](./20210227-imooc-python3-ml-11-9)
-  - [第十二章] 决策树
-    - [12-1 决策树](./20210228-imooc-python3-ml-12-1)
-    - [12-2 信息熵](./20210228-imooc-python3-ml-12-2)
-    - [12-3 使用信息熵寻找最优划分](./20210228-imooc-python3-ml-12-3)
-    - [12-4 基尼系数](./20210228-imooc-python3-ml-12-4)
-    - [12-5 CART 与决策树中的超参数](./20210228-imooc-python3-ml-12-5)
-    - [12-6 决策树解决回归问题](./20210228-imooc-python3-ml-12-6)
-    - [12-7 决策树的局限性](./20210228-imooc-python3-ml-12-7)
-  - [第十三集] 集成学习
-    - [13-1 什么是集成学习？](./20210228-imooc-python3-ml-13-1)
-    - [13-2 SoftVoting Classifier](./20210228-imooc-python3-ml-13-2)
-    - [13-3 Bagging 和 Pasting](./20210228-imooc-python3-ml-13-3)
-    - [13-4 OOB(Out-of-Bag) 和关于 Bagging 的更多讨论](./20210228-imooc-python3-ml-13-4)
-    - [13-5 随机森林和 Extra-Trees](./20210228-imooc-python3-ml-13-5)
-    - [13-6 Ada Boosting 和 Gradient Boosting](./20210228-imooc-python3-ml-13-6)
-    - [13-7 Stacking](./20210228-imooc-python3-ml-13-7)
-  - [第十四章：14-1 学习 scikit-learn 文档](./20210228-imooc-python3-ml-14-1)
 
 看一遍视频课程，并且做好相应的课程笔记。
 
