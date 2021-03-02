@@ -7,6 +7,8 @@
 
 ## 近期工作 
 
+- [2021.03.02 #Inside-Outside Net# Inside-Outside Net 论文阅读笔记](./posts/20210302-inside-outside-net)
+
 - [2021.02.29 #SKNet# Attention mechanism: SENet & SKNet](./posts/20210301-Attention-mechanism)
 
 - [2021.02.28 #机器学习# imooc 的 Python3 入门机器学习课程完结](./posts/20210228-imooc-python3-ml-course)
