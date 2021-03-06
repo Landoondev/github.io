@@ -7,6 +7,8 @@
 
 ## 近期工作 
 
+- [2021.03.06 #SKNet# 论文阅读 Selective Kernel Networks](./posts/20210306-Selective-Kernel-Networks)
+
 - [2021.03.02 #Inside-Outside Net# Inside-Outside Net 论文阅读笔记](./posts/20210302-inside-outside-net)
 
 - [2021.02.29 #SKNet# Attention mechanism: SENet & SKNet](./posts/20210301-Attention-mechanism)

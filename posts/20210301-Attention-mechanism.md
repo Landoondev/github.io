@@ -155,7 +155,11 @@ SK Convolution $\rightarrow$ SK unit $\rightarrow$ ==SK Networks==.
 
 ![](./20210302/5.png)
 
-- 论文中提到，设置 SK[2, 16, 32]
+- 论文中提到，设置 SK[2, 16, 32]，还是上不去 90%。
+
+依旧是过拟合非常严重。进行一定的数据增强（Resize 32×32 为 64×64）后，精度能够上 90%。
+
+
 
 
 
