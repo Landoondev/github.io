@@ -1,7 +1,5 @@
 <h1 align='center'> Home Page </h1>
 
-- [2021.01.09 ~ 2021.02.27 # 寒假 TODO LIST](./posts/20210109-Winter-Vacation-TODO-list)
-
 
 - [#*LeetCode-daily*# 📌](./posts/2020-11-30-LeetCode-daily)
 
