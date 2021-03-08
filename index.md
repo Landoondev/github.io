@@ -10,6 +10,8 @@
 
 
 
+- 📝[2021.03.08 #Non-local-Net# Non-local Neural Networks](./posts/20210308-non-local-neural-networks)
+
 - 📝[2021.03.06 #SKNet# Selective Kernel Networks](./posts/20210306-Selective-Kernel-Networks)
 
 - 📝[2021.03.02 #Inside-Outside Net# Inside-Outside Net: Detecting Objects in Context with Skip Pooling and Recurrent Neural Networks](./posts/20210302-inside-outside-net)
