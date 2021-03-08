@@ -10,6 +10,8 @@
 
 
 
+- 📝[2021.03.08 Attention U-Net: Learning Where to Look for the Pancreas](./posts/20210308-Attention-U-Net)
+
 - 📝[2021.03.08 #Non-local-Net# Non-local Neural Networks](./posts/20210308-non-local-neural-networks)
 
 - 📝[2021.03.06 #SKNet# Selective Kernel Networks](./posts/20210306-Selective-Kernel-Networks)
