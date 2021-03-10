@@ -10,6 +10,8 @@
 
 
 
+- 📝 [2021.03.10 #Inception Attention# Attentive Inception Module based Convolutional Neural Network for Image Enhancement](./posts/20210310-Attentive-Inception-Module)
+
 - 📝[2021.03.08 Attention U-Net: Learning Where to Look for the Pancreas](./posts/20210308-Attention-U-Net)
 
 - 📝[2021.03.08 #Non-local-Net# Non-local Neural Networks](./posts/20210308-non-local-neural-networks)
