@@ -10,6 +10,8 @@
 
 
 
+- 📝[2021.03.23 #ResNeSt# ResNeSt: Split-Attention Networks](./posts/20210323-resnest1)
+
 - 📝[2021.03.13 #SKNet#（SKNet）Selective Kernel Network 解析](./posts/20210315-sknet-review)
 
 - 📝[2021.03.13 #WRN# Wide Residual Networks](./posts/20210313-wrn)
