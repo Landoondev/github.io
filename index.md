@@ -11,6 +11,7 @@
 
 
 - 📝[2021.03.23 #ResNeSt# ResNeSt: Split-Attention Networks](./posts/20210323-resnest1)
+  - [2021.03.24 ](./posts/20210324-resnest)
 
 - 📝[2021.03.13 #SKNet#（SKNet）Selective Kernel Network 解析](./posts/20210315-sknet-review)
 
@@ -61,6 +62,10 @@
 ## II 论文复现相关
 
 > 看完一些论文后跑的代码✅
+
+
+
+- [2021.03.24 TensorBoard & Summary](./posts/20210324-resnest-pytorch)
 
 - 👨‍💻 [2021.01.22 #SENet50# ResNet50、SENet50 和 SKNet50](./posts/20210122-SENet-SKNet)
 
