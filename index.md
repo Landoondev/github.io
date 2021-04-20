@@ -8,7 +8,10 @@
 >
 > 看完一篇论文，总得留下些什么！
 
+- [2021.04.13 SegNet:](./posts/20210413-SegNet-notes)
+  - [20210420-SegNet](./posts/20210420-SegNet)
 
+- [2021.04.01 Image Segmentation Using Deep Learning: A Survey](./posts/20210401-Image-Segmentation-Survey)
 
 - 📝[2021.03.23 #ResNeSt# ResNeSt: Split-Attention Networks](./posts/20210323-resnest1)
   - [2021.03.24 ](./posts/20210324-resnest)
