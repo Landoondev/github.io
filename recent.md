@@ -5,6 +5,18 @@
 
 ## 近期工作 
 
+- [2021.04.13 SegNet:](./posts/20210413-SegNet-notes)
+  - [20210420-SegNet](./posts/20210420-SegNet)
+- [2021.04.01 Image Segmentation Using Deep Learning: A Survey](./posts/20210401-Image-Segmentation-Survey)
+- 📝[2021.03.23 #ResNeSt# ResNeSt: Split-Attention Networks](./posts/20210323-resnest1)
+  - [2021.03.24 ](./posts/20210324-resnest)
+- 📝[2021.03.13 #SKNet#（SKNet）Selective Kernel Network 解析](./posts/20210315-sknet-review)
+- 📝[2021.03.13 #WRN# Wide Residual Networks](./posts/20210313-wrn)
+- 📝[2021.03.11 #DANet# Dual Attention Network for Scene Segmentation](./posts/20210311-dual-attention-network)
+- 📝 [2021.03.10 #Inception Attention# Attentive Inception Module based Convolutional Neural Network for Image Enhancement](./posts/20210310-Attentive-Inception-Module)
+- 📝[2021.03.08 Attention U-Net: Learning Where to Look for the Pancreas](./posts/20210308-Attention-U-Net)
+- 📝[2021.03.08 #Non-local-Net# Non-local Neural Networks](./posts/20210308-non-local-neural-networks)
+
 - [2021.03.06 #SKNet# 论文阅读 Selective Kernel Networks](./posts/20210306-Selective-Kernel-Networks)
 
 - [2021.03.02 #Inside-Outside Net# Inside-Outside Net 论文阅读笔记](./posts/20210302-inside-outside-net)
