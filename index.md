@@ -5,7 +5,7 @@
 - [2021.05.13 DRIVE、STARE、CHASE_DB1 数据集：3 通道转为 1 通道](./posts/20210513-DRIVE)
   - 解决了为什么 Pillow 读彩色图片没有 3 个通道的问题。其实是有 3 个通道，不过需要进行一些改变。
 
-- [2021.05.13 （Logging）将终端的输出写入文件](./post/20210513-print-to-logfile)
+- [2021.05.13 （Logging）将终端的输出写入文件](./posts/20210513-print-to-logfile)
   - 神经网络的训练一定要打 Log！！！
 
 - [2021.03.24 TensorBoard & Summary](./posts/20210324-resnest-pytorch)
