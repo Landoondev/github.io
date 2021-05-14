@@ -10,6 +10,7 @@
 
 - [2021.05.13 （Logging）将终端的输出写入文件](./posts/20210513-print-to-logfile)
   - 神经网络的训练一定要打 Log！！！
+- [2021.4.28 Pillow 绘制直方图 生物图像与信息学练习](./posts/Histogram-and-RoI)
 
 - [2021.03.24 TensorBoard & Summary](./posts/20210324-resnest-pytorch)
 
