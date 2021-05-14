@@ -2,6 +2,9 @@
 
 
 
+- [2021.05.14 DRIVE、CHASE_DB1数据集：数据预处理](./posts/20210514-preprocessing)
+  - 数据预处理：提取对比度较高的绿色通道、CLAHE、锐化、Gamma、Top-Hat。数据预处理值得深入去学习！
+
 - [2021.05.13 DRIVE、STARE、CHASE_DB1 数据集：3 通道转为 1 通道](./posts/20210513-DRIVE)
   - 解决了为什么 Pillow 读彩色图片没有 3 个通道的问题。其实是有 3 个通道，不过需要进行一些改变。
 
