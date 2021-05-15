@@ -2,6 +2,8 @@
 
 
 
+- [2021.05.15 A-Z, a-z ASCII 大小写转换，这次搞懂了！](./posts/20210515-to_lower)
+
 - [2021.05.14 自己编写函数读取 MNIST 的四个压缩文件，不使用 PyTorch or TensorFlow 提供的接口](./posts/20210514-MNIST)
   - 我就是想可视化 `plt.imshow()` 一下这个数据集，然后，如何从 `train-images-idx3-ubyte.gz` 这样的压缩包中读取数据呢？实际上使用了 `gzip`。
 
