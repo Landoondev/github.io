@@ -2,6 +2,8 @@
 
 
 
+- [test]
+
 - [2021.05.15 A-Z, a-z ASCII 大小写转换，这次搞懂了！](./posts/20210515-to_lower)
 
 - [2021.05.14 自己编写函数读取 MNIST 的四个压缩文件，不使用 PyTorch or TensorFlow 提供的接口](./posts/20210514-MNIST)
